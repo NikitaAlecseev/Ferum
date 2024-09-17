@@ -1,0 +1,20 @@
+﻿FerumServerWPF
+
+
+winexe
+C#
+.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\
+FerumServerWPF
+none
+false
+DEBUG;TRACE
+E:\Project VS\Ferum\FerumServerWPF\App.xaml
+11-493557771
+7284679058
+33-835708167
+43-365502694
+Assets\Icons.xaml;MainWindow.xaml;Pages\PageInformation\PageDisk.xaml;Pages\PageInformation\PageMainInformation.xaml;Pages\PageInformation\PageMonitor.xaml;Pages\PageInformation\PageNetwork.xaml;Pages\PageInformation\PagePowershell.xaml;Pages\PageInformation\PagePrograms.xaml;Pages\PageInformation\PageTasks.xaml;Styles\MainStyle.xaml;WindowView.xaml;
+
+False
+

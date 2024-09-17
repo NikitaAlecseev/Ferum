@@ -1,0 +1,277 @@
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.AssemblyReference.cache
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.SuggestedBindingRedirects.cache
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\MainWindow.g.cs
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\App.g.cs
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.cache
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.lref
+D:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe.config
+D:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe
+D:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.pdb
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\App.baml
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\Assets\Icons.baml
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\MainWindow.baml
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\Styles\MainStyle.baml
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.g.resources
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.Properties.Resources.resources
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.GenerateResource.cache
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.CoreCompileInputs.cache
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.exe
+D:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.AssemblyReference.cache
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\MainWindow.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\App.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.cache
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.lref
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe.config
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\App.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Assets\Icons.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\MainWindow.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Styles\MainStyle.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.g.resources
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.Properties.Resources.resources
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.GenerateResource.cache
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.CoreCompileInputs.cache
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.exe
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\WindowView.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\WindowView.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageDisk.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMainInformation.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMonitor.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageNetwork.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePowershell.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePrograms.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageTasks.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageDisk.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMainInformation.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMonitor.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageNetwork.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePowershell.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePrograms.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageTasks.baml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\libSkiaSharp.dylib
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\x86\libSkiaSharp.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\x64\libSkiaSharp.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\arm64\libSkiaSharp.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\LottieSharp.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Buffers.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Drawing.Common.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Memory.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.pdb
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Buffers.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Memory.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_Content.g.cs
+C:\Users\alekseev_na\Downloads\Ferum\FerumServerWPF\obj\Debug\FerumSer.93B26378.Up2Date
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\libSkiaSharp.dylib
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\x86\libSkiaSharp.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\x64\libSkiaSharp.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\arm64\libSkiaSharp.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe.config
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\LottieSharp.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Buffers.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Drawing.Common.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Memory.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Numerics.Vectors.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Buffers.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Memory.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Numerics.Vectors.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.AssemblyReference.cache
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\MainWindow.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageDisk.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMainInformation.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMonitor.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageNetwork.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePowershell.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePrograms.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageTasks.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\WindowView.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\App.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_Content.g.cs
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.cache
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.lref
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\App.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Assets\Icons.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\MainWindow.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageDisk.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMainInformation.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMonitor.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageNetwork.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePowershell.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePrograms.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageTasks.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\Styles\MainStyle.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\WindowView.baml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.g.resources
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.Properties.Resources.resources
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.GenerateResource.cache
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.CoreCompileInputs.cache
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.CopyComplete
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.exe
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\BouncyCastle.Cryptography.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\K4os.Hash.xxHash.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\MySql.Data.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Newtonsoft.Json.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.IO.Pipelines.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\ZstdSharp.dll
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\BouncyCastle.Cryptography.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\K4os.Hash.xxHash.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\MySql.Data.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\Newtonsoft.Json.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.IO.Pipelines.xml
+C:\GitRepository\FEinfer\Ferum\FerumServerWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\libSkiaSharp.dylib
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\x86\libSkiaSharp.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\x64\libSkiaSharp.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\arm64\libSkiaSharp.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumDatabase.mdf
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumDatabase_log.ldf
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe.config
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\BouncyCastle.Cryptography.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\K4os.Hash.xxHash.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\LottieSharp.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\MySql.Data.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Newtonsoft.Json.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Buffers.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Drawing.Common.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.IO.Pipelines.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Memory.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Numerics.Vectors.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\ZstdSharp.dll
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\BouncyCastle.Cryptography.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\K4os.Hash.xxHash.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\MySql.Data.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\Newtonsoft.Json.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.SceneGraph.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Skottie.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.Desktop.Common.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.pdb
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.Views.WPF.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Buffers.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.IO.Pipelines.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Memory.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Numerics.Vectors.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Project VS\Ferum\FerumServerWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.AssemblyReference.cache
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\MainWindow.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageDisk.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMainInformation.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMonitor.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageNetwork.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePowershell.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePrograms.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageTasks.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\WindowView.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\App.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_Content.g.cs
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.cache
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF_MarkupCompile.lref
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\App.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Assets\Icons.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\MainWindow.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageDisk.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMainInformation.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageMonitor.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageNetwork.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePowershell.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PagePrograms.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Pages\PageInformation\PageTasks.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\Styles\MainStyle.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\WindowView.baml
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.g.resources
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.Properties.Resources.resources
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.GenerateResource.cache
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.CoreCompileInputs.cache
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.exe
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.pdb
+E:\Project VS\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.CopyComplete

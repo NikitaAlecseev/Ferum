@@ -1,0 +1,69 @@
+C:\GitRepository\Ferum\FerumServer\bin\Debug\FerumServer.exe.config
+C:\GitRepository\Ferum\FerumServer\bin\Debug\FerumServer.exe
+C:\GitRepository\Ferum\FerumServer\bin\Debug\FerumServer.pdb
+C:\GitRepository\Ferum\FerumServer\bin\Debug\MaterialSkin.dll
+C:\GitRepository\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.dll
+C:\GitRepository\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.xml
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.csproj.AssemblyReference.cache
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.Form1.resources
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.FormShowInfo.resources
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.Properties.Resources.resources
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TilePC.resources
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.csproj.GenerateResource.cache
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.csproj.CoreCompileInputs.cache
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumSer.76D30856.Up2Date
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.exe
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.pdb
+C:\GitRepository\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TileDisk.resources
+C:\GitRepository\FEinfer\Ferum\FerumServer\bin\Debug\FerumServer.exe.config
+C:\GitRepository\FEinfer\Ferum\FerumServer\bin\Debug\FerumServer.exe
+C:\GitRepository\FEinfer\Ferum\FerumServer\bin\Debug\FerumServer.pdb
+C:\GitRepository\FEinfer\Ferum\FerumServer\bin\Debug\MaterialSkin.dll
+C:\GitRepository\FEinfer\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.dll
+C:\GitRepository\FEinfer\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.xml
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.csproj.AssemblyReference.cache
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.Form1.resources
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.FormShowInfo.resources
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.Properties.Resources.resources
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TileDisk.resources
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TilePC.resources
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.csproj.GenerateResource.cache
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.csproj.CoreCompileInputs.cache
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.csproj.CopyComplete
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.exe
+C:\GitRepository\FEinfer\Ferum\FerumServer\obj\Debug\FerumServer.pdb
+D:\Project VS\Ferum\FerumServer\bin\Debug\FerumServer.exe.config
+D:\Project VS\Ferum\FerumServer\bin\Debug\FerumServer.exe
+D:\Project VS\Ferum\FerumServer\bin\Debug\FerumServer.pdb
+D:\Project VS\Ferum\FerumServer\bin\Debug\MaterialSkin.dll
+D:\Project VS\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.dll
+D:\Project VS\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.xml
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.AssemblyReference.cache
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.SuggestedBindingRedirects.cache
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Form1.resources
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.FormShowInfo.resources
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Properties.Resources.resources
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TileDisk.resources
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TilePC.resources
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.GenerateResource.cache
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.CoreCompileInputs.cache
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.CopyComplete
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.exe
+D:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.pdb
+E:\Project VS\Ferum\FerumServer\bin\Debug\FerumServer.exe.config
+E:\Project VS\Ferum\FerumServer\bin\Debug\FerumServer.exe
+E:\Project VS\Ferum\FerumServer\bin\Debug\FerumServer.pdb
+E:\Project VS\Ferum\FerumServer\bin\Debug\MaterialSkin.dll
+E:\Project VS\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.dll
+E:\Project VS\Ferum\FerumServer\bin\Debug\Newtonsoft.Json.xml
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.AssemblyReference.cache
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Form1.resources
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.FormShowInfo.resources
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Properties.Resources.resources
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TileDisk.resources
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.Tiles.TilePC.resources
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.GenerateResource.cache
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.CoreCompileInputs.cache
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.csproj.CopyComplete
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.exe
+E:\Project VS\Ferum\FerumServer\obj\Debug\FerumServer.pdb

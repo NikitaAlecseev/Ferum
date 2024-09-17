@@ -1,0 +1,47 @@
+C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.csproj.AssemblyReference.cache
+C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CoreCompileInputs.cache
+C:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe.config
+C:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+C:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.pdb
+C:\GitRepository\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.dll
+C:\GitRepository\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.xml
+C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumCli.6AABD557.Up2Date
+C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.exe
+C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.pdb
+C:\GitRepository\FEinfer\Ferum\FerumClient\bin\Debug\FerumClient.exe.config
+C:\GitRepository\FEinfer\Ferum\FerumClient\bin\Debug\FerumClient.exe
+C:\GitRepository\FEinfer\Ferum\FerumClient\bin\Debug\FerumClient.pdb
+C:\GitRepository\FEinfer\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.dll
+C:\GitRepository\FEinfer\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.xml
+C:\GitRepository\FEinfer\Ferum\FerumClient\obj\Debug\FerumClient.csproj.AssemblyReference.cache
+C:\GitRepository\FEinfer\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CoreCompileInputs.cache
+C:\GitRepository\FEinfer\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CopyComplete
+C:\GitRepository\FEinfer\Ferum\FerumClient\obj\Debug\FerumClient.exe
+C:\GitRepository\FEinfer\Ferum\FerumClient\obj\Debug\FerumClient.pdb
+D:\Project VS\Ferum\FerumClient\bin\Debug\FerumClient.exe.config
+D:\Project VS\Ferum\FerumClient\bin\Debug\FerumClient.exe
+D:\Project VS\Ferum\FerumClient\bin\Debug\FerumClient.pdb
+D:\Project VS\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.dll
+D:\Project VS\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.xml
+D:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.csproj.AssemblyReference.cache
+D:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.csproj.SuggestedBindingRedirects.cache
+D:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CoreCompileInputs.cache
+D:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CopyComplete
+D:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.exe
+D:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.pdb
+E:\Project VS\Ferum\FerumClient\bin\Debug\FerumClient.exe.config
+E:\Project VS\Ferum\FerumClient\bin\Debug\FerumClient.exe
+E:\Project VS\Ferum\FerumClient\bin\Debug\FerumClient.pdb
+E:\Project VS\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.dll
+E:\Project VS\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.xml
+E:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.csproj.AssemblyReference.cache
+E:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CoreCompileInputs.cache
+E:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.exe
+E:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.pdb
+E:\Project VS\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CopyComplete
+E:\Project VS\Ferum\FerumClient\bin\Debug\System.IO.FileSystem.AccessControl.dll
+E:\Project VS\Ferum\FerumClient\bin\Debug\System.Security.AccessControl.dll
+E:\Project VS\Ferum\FerumClient\bin\Debug\System.Security.Principal.Windows.dll
+E:\Project VS\Ferum\FerumClient\bin\Debug\System.IO.FileSystem.AccessControl.xml
+E:\Project VS\Ferum\FerumClient\bin\Debug\System.Security.AccessControl.xml
+E:\Project VS\Ferum\FerumClient\bin\Debug\System.Security.Principal.Windows.xml
