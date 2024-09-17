@@ -9,8 +9,7 @@ namespace FerumServerWPF.Entity
     public class MainInformationEntity
     {
         public string HostName { get; set; } // имя хоста
-        public string LastShutdown { get; set; } // последнее выключение
-        public string Uptime { get; set; } // последнее включение
+        public TimeSpan LastRestartComputer { get; set; } // последняя перезагрузка
         public string ModelMotherboard { get; set; } // модель материнки
         public string ModelProcessor { get; set; } // модель процессора
         public List<VideoCardEntity> ModelsVideoCard { get; set; } // модель видеокарты
@@ -18,12 +17,13 @@ namespace FerumServerWPF.Entity
         public List<RandomAccessMemory> RandomMemory { get; set; } // оперативная память
         public string VersionAgent { get; set; } // версия агента
 
+        public string GetLastRestartComputer { get { return $"{LastRestartComputer.Days} д. {LastRestartComputer.Hours} ч. {LastRestartComputer.Minutes} мин. {LastRestartComputer.Seconds} сек."; } }
 
-        public MainInformationEntity(string hostName, string lastShutdown, string uptime, string modelMotherboard, string modelProcessor, List<VideoCardEntity> modelsVideoCard, List<UsersEntity> users, List<RandomAccessMemory> randomMemory, string versionAgent)
+
+        public MainInformationEntity(string hostName, TimeSpan lastRestartComputer, string modelMotherboard, string modelProcessor, List<VideoCardEntity> modelsVideoCard, List<UsersEntity> users, List<RandomAccessMemory> randomMemory, string versionAgent)
         {
             HostName = hostName;
-            LastShutdown = lastShutdown;
-            Uptime = uptime;
+            LastRestartComputer = lastRestartComputer;
             ModelMotherboard = modelMotherboard;
             ModelProcessor = modelProcessor;
             ModelsVideoCard = modelsVideoCard;

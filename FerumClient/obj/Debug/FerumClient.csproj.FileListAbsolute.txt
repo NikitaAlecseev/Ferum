@@ -5,7 +5,6 @@ C:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
 C:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.pdb
 C:\GitRepository\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.dll
 C:\GitRepository\Ferum\FerumClient\bin\Debug\Newtonsoft.Json.xml
-C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumCli.6AABD557.Up2Date
 C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.exe
 C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.pdb
 C:\GitRepository\FEinfer\Ferum\FerumClient\bin\Debug\FerumClient.exe.config
@@ -45,3 +44,10 @@ E:\Project VS\Ferum\FerumClient\bin\Debug\System.Security.Principal.Windows.dll
 E:\Project VS\Ferum\FerumClient\bin\Debug\System.IO.FileSystem.AccessControl.xml
 E:\Project VS\Ferum\FerumClient\bin\Debug\System.Security.AccessControl.xml
 E:\Project VS\Ferum\FerumClient\bin\Debug\System.Security.Principal.Windows.xml
+C:\GitRepository\Ferum\FerumClient\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\GitRepository\Ferum\FerumClient\bin\Debug\System.Security.AccessControl.dll
+C:\GitRepository\Ferum\FerumClient\bin\Debug\System.Security.Principal.Windows.dll
+C:\GitRepository\Ferum\FerumClient\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\GitRepository\Ferum\FerumClient\bin\Debug\System.Security.AccessControl.xml
+C:\GitRepository\Ferum\FerumClient\bin\Debug\System.Security.Principal.Windows.xml
+C:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CopyComplete

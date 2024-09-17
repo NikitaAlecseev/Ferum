@@ -171,25 +171,14 @@
                         </StackPanel>
                     </Grid>
 
-                    <!--Последнее включение/выключение компа-->
+                    <!--Время работы компьютера-->
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="50"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Text="Последнее включение/выключение компьютера" Foreground="White" FontSize="25" FontWeight="Bold" VerticalAlignment="Bottom" Margin="0 10"/>
+                        <TextBlock Text="Компьютер работает на протяжении" Foreground="White" FontSize="25" FontWeight="Bold" VerticalAlignment="Bottom" Margin="0 10"/>
                         <StackPanel Grid.Row="2">
-                            <Border Height="50" Background="#030411" CornerRadius="10" Margin="0 0 0 5">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="40"/>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="100"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Width="30" Source="/Assets/Icons/Information/icon_off.png"/>
-                                    <TextBlock Text="{Binding InfoEntity.LastShutdown}" Foreground="White" FontSize="20" Grid.Column="1" VerticalAlignment="Center" Margin="10 0"/>
-                                </Grid>
-                            </Border>
                             <Border Height="50" Background="#030411" CornerRadius="10">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
@@ -198,7 +187,7 @@
                                         <ColumnDefinition Width="100"/>
                                     </Grid.ColumnDefinitions>
                                     <Image Width="30" Source="/Assets/Icons/Information/icon_on.png"/>
-                                    <TextBlock Text="{Binding InfoEntity.Uptime}" Foreground="White" FontSize="20" Grid.Column="1" VerticalAlignment="Center" Margin="10 0"/>
+                                    <TextBlock Text="{Binding InfoEntity.GetLastRestartComputer}" Foreground="White" FontSize="20" Grid.Column="1" VerticalAlignment="Center" Margin="10 0"/>
                                 </Grid>
                             </Border>
                         </StackPanel>

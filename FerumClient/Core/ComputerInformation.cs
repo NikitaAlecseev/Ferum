@@ -41,6 +41,33 @@ namespace FerumClient.Core
             return result;
         }
 
+        public static TimeSpan GetLastRestartPC()
+        {
+            SelectQuery query = new SelectQuery(@"SELECT LastBootUpTime FROM Win32_OperatingSystem WHERE Primary='true'");
+
+            // create a new management object searcher and pass it
+            // the select query
+            ManagementObjectSearcher searcher =
+                new ManagementObjectSearcher(query);
+
+            // get the datetime value and set the local boot
+            // time variable to contain that value
+            DateTime dtBootTime;
+            TimeSpan result = new TimeSpan();
+
+            foreach (ManagementObject mo in searcher.Get())
+            {
+                dtBootTime =
+                    ManagementDateTimeConverter.ToDateTime(
+                        mo.Properties["LastBootUpTime"].Value.ToString());
+
+                result = DateTime.Now - dtBootTime;
+            }
+            Console.WriteLine($"Время работы компьютера: {result.Days} д. {result.Hours} ч. {result.Minutes} мин. {result.Seconds} сек.");
+
+            return result;
+        }
+
         public static string GetGPUModel()
         {
             string model = "";
@@ -67,26 +94,6 @@ namespace FerumClient.Core
             }
 
             return model;
-        }
-
-        public static string GetUptimeInfo()
-        {
-            string result = "";
-
-            string query = "SELECT LastBootUpTime FROM Win32_OperatingSystem";
-            using (ManagementObjectSearcher searcher = new ManagementObjectSearcher(query))
-            {
-                foreach (ManagementObject obj in searcher.Get())
-                {
-                    if (obj["LastBootUpTime"] != null)
-                    {
-                        result = ManagementDateTimeConverter.ToDateTime(obj["LastBootUpTime"].ToString()).ToString();
-                        break; // Получаем только первое значение, так как оно должно быть единственным
-                    }
-                }
-            }
-
-            return result;
         }
 
         public static string GetMotherboardModel()

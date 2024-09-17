@@ -34,11 +34,9 @@ namespace FerumClient
                 // Получение информации о хосте
                 var hostInfo = ComputerInformation.GetHostInfo();
 
-                // Получение информации о последнем выключении
-                var lastShutdownInfo = ComputerInformation.GetLastShutdownInfo();
 
-                // Получение информации о времени без перезагрузок
-                var uptimeInfo = ComputerInformation.GetUptimeInfo();
+                // Получение информации о последней перезагрузки
+                var lastTimeRestart = ComputerInformation.GetLastRestartPC();
 
                 // Получение информации о последнем пользователе
                 var usersInfo = ComputerInformation.GetUsersInfo();
@@ -71,7 +69,7 @@ namespace FerumClient
                 List<HardInfo> hardsInfo = ComputerInformation.GetHardDisks();
 
                 // Создание объекта с информацией о хосте
-                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastShutdownInfo, uptimeInfo, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories,"v0.3");
+                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories,"v0.3.5");
 
                 // Сериализация информации о хосте в формат JSON
                 string jsonString = JsonConvert.SerializeObject(hostObj);
