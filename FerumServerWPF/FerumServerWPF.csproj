@@ -155,6 +155,7 @@
     <Compile Include="Core\DB\CommandDB.cs" />
     <Compile Include="Core\DB\DB.cs" />
     <Compile Include="Core\Entity\Information\HardInfo.cs" />
+    <Compile Include="Core\Entity\RequestInformation\InstalledProgram.cs" />
     <Compile Include="Core\EventSystem.cs" />
     <Compile Include="Core\GlobalVar.cs" />
     <Compile Include="Core\Server\DBServer.cs" />

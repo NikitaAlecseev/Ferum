@@ -1,4 +1,5 @@
-﻿using FerumClient.Entity;
+﻿using FerumClient.Core.Entity.RequestInformation;
+using FerumClient.Entity;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,11 @@ namespace FerumClient.Core
                     //List<ProcessEntity> listProcess = ComputerInformation.GetAllProcessEntityList();
                     //string jsonString = JsonConvert.SerializeObject(listProcess);
                     //SendHostInfo.SendHost(jsonString);
+                    break;
+                case "Get Programs":
+                    List<InstalledProgram> installed = ComputerInformation.GetInstalledProgramsFromRegistry();
+                    string json = JsonConvert.SerializeObject(installed);
+                    SendHostInfo.SendHostRequest(json);
                     break;
             }
         }

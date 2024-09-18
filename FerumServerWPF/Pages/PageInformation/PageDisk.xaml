@@ -7,6 +7,7 @@
        xmlns:lottie="clr-namespace:LottieSharp.WPF;assembly=LottieSharp"
       mc:Ignorable="d" 
       d:DesignHeight="640" d:DesignWidth="850"
+      Loaded="Page_Loaded"
       Title="PageDisk">
 
     <Border Background="#0D0E1A">
@@ -23,40 +24,30 @@
             <!--Information-->
             <ScrollViewer x:Name="scrollViewerUI" Background="#0D0E1A" Grid.Row="1" Visibility="Visible" Margin="20">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                    <Border Width="380" Height="100" Background="#030411" CornerRadius="20">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="80"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Image Height="60" Source="/Assets/Icons/Information/icon_harddisk.png" Grid.RowSpan="3"/>
-                            <TextBlock Text="Windows (C:)" Foreground="White" FontSize="18" Grid.Column="1" VerticalAlignment="Center"/>
-                            <ProgressBar Value="50" Grid.Column="1" Grid.Row="1" Height="20" Margin="0 0 10 0" Foreground="#296688"/>
-                            <TextBlock Text="96,0 ГБ свободно из 476 ГБ" Grid.Column="1" Grid.Row="2" Foreground="#BDBDBD" FontSize="16"/>
-                        </Grid>
-                    </Border>
-                    <Border Width="380" Height="100" Background="#030411" CornerRadius="20" Margin="10 0 0 0">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="80"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Image Height="60" Source="/Assets/Icons/Information/icon_harddisk.png" Grid.RowSpan="3"/>
-                            <TextBlock Text="Том (D:)" Foreground="White" FontSize="18" Grid.Column="1" VerticalAlignment="Center"/>
-                            <ProgressBar Value="88" Grid.Column="1" Grid.Row="1" Height="20" Margin="0 0 10 0" Foreground="#882929"/>
-                            <TextBlock Text="96,0 ГБ свободно из 476 ГБ" Grid.Column="1" Grid.Row="2" Foreground="#BDBDBD" FontSize="16"/>
-                        </Grid>
-                    </Border>
+                    <ItemsControl ItemsSource="{Binding InfoEntity.HardDisks}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Width="380" Height="100" Background="#030411" CornerRadius="20">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="80"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Image Height="60" Source="/Assets/Icons/Information/icon_harddisk.png" Grid.RowSpan="3"/>
+                                        <TextBlock Text="{Binding Path=GetFullName}" Foreground="White" FontSize="18" Grid.Column="1" VerticalAlignment="Center"/>
+                                        <ProgressBar Value="50" Grid.Column="1" Grid.Row="1" Height="20" Margin="0 0 10 0" Foreground="#296688"/>
+                                        <TextBlock Text="{Binding Path=GetStringSize}" Grid.Column="1" Grid.Row="2" Foreground="#BDBDBD" FontSize="16"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                   
                 </StackPanel>
             </ScrollViewer>
         </Grid>

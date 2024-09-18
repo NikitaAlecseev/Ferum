@@ -66,10 +66,10 @@ namespace FerumClient
                 //List<ProcessEntity> activeProcess = ComputerInformation.GetAllProcessEntityList();
 
                 // Получение информации о дисках
-                List<HardInfo> hardsInfo = ComputerInformation.GetHardDisks();
+                List<HardInfo> hardDisks = ComputerInformation.GetHardDisks();
 
                 // Создание объекта с информацией о хосте
-                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories,"v0.3.5");
+                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories, hardDisks, "v0.5");
 
                 // Сериализация информации о хосте в формат JSON
                 string jsonString = JsonConvert.SerializeObject(hostObj);

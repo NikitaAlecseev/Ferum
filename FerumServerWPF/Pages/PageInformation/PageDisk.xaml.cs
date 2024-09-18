@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FerumServerWPF.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,16 @@ namespace FerumServerWPF.Pages.PageInformation
     /// </summary>
     public partial class PageDisk : Page
     {
+        private MainInformationVM viewModel = new MainInformationVM();
         public PageDisk()
         {
             InitializeComponent();
+            DataContext = viewModel;
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

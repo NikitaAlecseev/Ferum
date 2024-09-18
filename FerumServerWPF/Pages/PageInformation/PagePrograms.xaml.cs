@@ -1,4 +1,9 @@
-﻿using System;
+﻿using FerumServerWPF.Core;
+using FerumServerWPF.Core.Entity.RequestInformation;
+using FerumServerWPF.Core.Server;
+using MySqlX.XDevAPI;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,19 +33,35 @@ namespace FerumServerWPF.Pages.PageInformation
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            Thread loadThread = new Thread(loadData);
-            loadThread.Start();
+            loadData();
         }
 
         private void loadData()
         {
-            Thread.Sleep(3500);
+            var thread = new Thread(()=> ServerSendCommand.Send(GlobalVar.SelectHostName, "Get Programs", ""));
+            thread.Start();
+            
+            EventSystem.EventGetAnswerClient += getAnswerClient;
+        }
+
+        private void getAnswerClient(string json)
+        {
+            List<InstalledProgram> programs = JsonConvert.DeserializeObject<List<InstalledProgram>>(json);
+            List<string> result = new List<string>();
+            for (int i = 0; i < programs.Count; i++)
+            {
+                result.Add(programs[i].Name);
+            }
+
 
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
+                listViewPrograms.ItemsSource = result;
+
                 loaderAnimUI.Visibility = Visibility.Collapsed;
                 listViewPrograms.Visibility = Visibility.Visible;
             }));
+
         }
     }
 }

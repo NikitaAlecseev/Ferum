@@ -56,12 +56,12 @@ namespace FerumServerWPF
         {
             List<MenuItemInfo> menuItems = new List<MenuItemInfo>();
             menuItems.Add(new MenuItemInfo("Основная", "pack://application:,,,/Assets/Icons/InfoMenu/icon_pc.png"));
-            menuItems.Add(new MenuItemInfo("Мониторы", "pack://application:,,,/Assets/Icons/InfoMenu/icon_monitor.png"));
+            //menuItems.Add(new MenuItemInfo("Мониторы", "pack://application:,,,/Assets/Icons/InfoMenu/icon_monitor.png"));
             menuItems.Add(new MenuItemInfo("Диски", "pack://application:,,,/Assets/Icons/InfoMenu/icon_disk.png"));
             menuItems.Add(new MenuItemInfo("Сеть", "pack://application:,,,/Assets/Icons/InfoMenu/icon_wifi.png"));
             menuItems.Add(new MenuItemInfo("Программы", "pack://application:,,,/Assets/Icons/InfoMenu/icon_programm_folder.png"));
-            menuItems.Add(new MenuItemInfo("Дисп.задач", "pack://application:,,,/Assets/Icons/InfoMenu/icon_task.png"));
-            menuItems.Add(new MenuItemInfo("Power shell", "pack://application:,,,/Assets/Icons/InfoMenu/icon_powershell.png"));
+            //menuItems.Add(new MenuItemInfo("Дисп.задач", "pack://application:,,,/Assets/Icons/InfoMenu/icon_task.png"));
+            menuItems.Add(new MenuItemInfo("Сценарии", "pack://application:,,,/Assets/Icons/InfoMenu/icon_powershell.png"));
 
             listMenu.ItemsSource = menuItems;
         }
@@ -120,7 +120,7 @@ namespace FerumServerWPF
                 case "Дисп.задач":
                     fContainer.Navigate(new System.Uri("Pages/PageInformation/PageTasks.xaml", UriKind.RelativeOrAbsolute));
                     break;
-                case "Power shell":
+                case "Сценарии":
                     fContainer.Navigate(new System.Uri("Pages/PageInformation/PagePowershell.xaml", UriKind.RelativeOrAbsolute));
                     break;
             }

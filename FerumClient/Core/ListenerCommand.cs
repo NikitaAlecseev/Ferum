@@ -1,4 +1,5 @@
-﻿using FerumClient.Entity;
+﻿using FerumClient.Core.Entity.Client;
+using FerumClient.Entity;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,13 @@ namespace FerumClient.Core
 {
     public class ListenerCommand
     {
-        private static TcpListener _tcpListener;
-        private static int _port = 2001;
+        private static TcpListener _tcpListenerRequest;
+        private static int _portRequest = 2001;
 
         public ListenerCommand()
         {
-            _tcpListener = new TcpListener(IPAddress.Any, _port);
-            _tcpListener.Start();
+            _tcpListenerRequest = new TcpListener(IPAddress.Any, _portRequest);
+            _tcpListenerRequest.Start();
 
             var thread = new Thread(TCPAcceptClient);
             thread.Start();
@@ -29,13 +30,13 @@ namespace FerumClient.Core
         {
             while (true)
             {
-                var client = _tcpListener.AcceptTcpClient();
-                var thread = new Thread(HandleClient);
+                var client = _tcpListenerRequest.AcceptTcpClient();
+                var thread = new Thread(HandleClientRequest);
                 thread.Start(client);
             }
         }
 
-        private static void HandleClient(object clientObject)
+        private static void HandleClientRequest(object clientObject)
         {
             var client = (TcpClient)clientObject;
 
@@ -51,8 +52,8 @@ namespace FerumClient.Core
 
                 try
                 {
-                    //Command hostInfoObj = JsonConvert.DeserializeObject<Command>(jsonString);
-                    //Commands.Send(hostInfoObj.command,hostInfoObj.parametr);
+                    Command hostInfoObj = JsonConvert.DeserializeObject<Command>(jsonString);
+                    Commands.Send(hostInfoObj.command,hostInfoObj.parametr);
                 }
                 catch (Exception ex)
                 {

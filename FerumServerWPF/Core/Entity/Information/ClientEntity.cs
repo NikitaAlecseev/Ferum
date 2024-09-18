@@ -45,6 +45,8 @@ namespace FerumServerWPF.Entity
             }
         }
 
+        
+
 
 
         public ClientEntity(string hostName, bool gameMode, bool warning, DateTime lastUpdateInformation, string versionAgent)

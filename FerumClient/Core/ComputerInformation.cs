@@ -1,4 +1,5 @@
 ﻿using FerumClient.Core.Entity.Information;
+using FerumClient.Core.Entity.RequestInformation;
 using FerumClient.Entity;
 using Microsoft.Win32;
 using System;
@@ -204,29 +205,6 @@ namespace FerumClient.Core
             return outResult;
         }
 
-        public static List<string> GetInstalledProgramsInfo()
-        {
-            List<string> results = new List<string>();
-
-            using (var key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"))
-            {
-                var subKeys = key.GetSubKeyNames();
-
-                foreach (var subKeyName in subKeys)
-                {
-                    using (var subKey = key.OpenSubKey(subKeyName))
-                    {
-                        var displayName = subKey.GetValue("DisplayName") as string;
-                        if (!string.IsNullOrEmpty(displayName))
-                        {
-                            results.Add(displayName);
-                        }
-                    }
-                }
-            }
-
-            return results;
-        }
 
         public static List<HardInfo> GetHardDisks()
         {
@@ -242,8 +220,8 @@ namespace FerumClient.Core
                     HardInfo hardInfo = new HardInfo();
                     hardInfo.Name = drive.VolumeLabel.ToString();
                     hardInfo.Symbol = drive.RootDirectory.Name;
-                    hardInfo.TotalFree = drive.TotalFreeSpace.ToString();
-                    hardInfo.TotalSize = drive.TotalSize.ToString();
+                    hardInfo.TotalFree = drive.TotalFreeSpace;
+                    hardInfo.TotalSize = drive.TotalSize;
                     hardDisks.Add(hardInfo);
                 }
             }
@@ -277,6 +255,67 @@ namespace FerumClient.Core
 
 
             return outVideoCards;
+        }
+
+
+        public static List<InstalledProgram> GetInstalledProgramsFromRegistry()
+        {
+            List<InstalledProgram> programs = new List<InstalledProgram>();
+
+            // Открываем ключ реестра с информацией о программах
+            const string Uninstall = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\";
+            using (RegistryKey hklm = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64), uninstallKey = hklm.OpenSubKey(Uninstall, RegistryKeyPermissionCheck.ReadSubTree))
+            {
+                // Перебираем все подключа
+                foreach (string subKeyName in uninstallKey.GetSubKeyNames())
+                {
+                    // Открываем подключ для чтения
+                    using (RegistryKey subKey = uninstallKey.OpenSubKey(subKeyName))
+                    {
+                        if (subKey != null)
+                        {
+                            // Извлекаем информацию о программе
+                            string name = subKey.GetValue("DisplayName") as string;
+                            string installLocation = subKey.GetValue("InstallLocation") as string;
+
+                            // Добавляем программу в список
+                            if (!string.IsNullOrEmpty(name))
+                            {
+                                programs.Add(new InstalledProgram(name, installLocation));
+                            }
+                        }
+                    }
+                }
+            }
+
+            using (RegistryKey hklm = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry64), uninstallKey = hklm.OpenSubKey(Uninstall, RegistryKeyPermissionCheck.ReadSubTree))
+            {
+                // Перебираем все подключа
+                foreach (string subKeyName in uninstallKey.GetSubKeyNames())
+                {
+                    // Открываем подключ для чтения
+                    using (RegistryKey subKey = uninstallKey.OpenSubKey(subKeyName))
+                    {
+                        if (subKey != null)
+                        {
+                            // Извлекаем информацию о программе
+                            string name = subKey.GetValue("DisplayName") as string;
+                            string installLocation = subKey.GetValue("InstallLocation") as string;
+
+                            // Добавляем программу в список
+                            if (!string.IsNullOrEmpty(name))
+                            {
+                                programs.Add(new InstalledProgram(name, installLocation));
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Сортируем список по полю Name по алфавиту
+            programs = programs.OrderBy(p => p.Name).ToList();
+
+            return programs;
         }
 
 
