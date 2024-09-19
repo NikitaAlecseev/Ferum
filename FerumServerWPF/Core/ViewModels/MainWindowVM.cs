@@ -1,5 +1,7 @@
-﻿using FerumServerWPF.Core.Server;
+﻿using FerumServerWPF.Core.DB;
+using FerumServerWPF.Core.Server;
 using FerumServerWPF.Entity;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,6 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using static FerumServerWPF.Core.EventSystem;
 
 namespace FerumServerWPF.Core.ViewModels
 {
@@ -29,7 +32,19 @@ namespace FerumServerWPF.Core.ViewModels
 
         public MainWindowVM()
         {
+            loadClients();
             EventSystem.EventSendClientToVM += getClient;
+        }
+
+        private void loadClients()
+        {
+            CommandDB command = new CommandDB();
+            command.LoadData("Select * From Clients");
+            for(int i = 0; i < command.MainTable.Rows.Count; i++)
+            {
+                MainInformationEntity clientInfo = JsonConvert.DeserializeObject<MainInformationEntity>(command.MainTable.Rows[i][2].ToString());
+                ClientEntity.Add(new ClientEntity(clientInfo.HostName, false, false, DateTime.Parse(command.MainTable.Rows[i][3].ToString()), clientInfo.VersionAgent));
+            }
         }
 
         private void getClient(MainInformationEntity clientInfo)

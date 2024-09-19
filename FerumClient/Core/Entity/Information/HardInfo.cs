@@ -10,7 +10,7 @@ namespace FerumClient.Core.Entity.Information
     {
         public string Name;
         public string Symbol;
-        public double TotalFree;
-        public double TotalSize;
+        public double TotalFreeMB;
+        public double TotalSizeMB;
     }
 }

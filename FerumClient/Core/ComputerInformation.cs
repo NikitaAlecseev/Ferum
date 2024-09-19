@@ -220,8 +220,8 @@ namespace FerumClient.Core
                     HardInfo hardInfo = new HardInfo();
                     hardInfo.Name = drive.VolumeLabel.ToString();
                     hardInfo.Symbol = drive.RootDirectory.Name;
-                    hardInfo.TotalFree = drive.TotalFreeSpace;
-                    hardInfo.TotalSize = drive.TotalSize;
+                    hardInfo.TotalFreeMB = drive.TotalFreeSpace / (1024 * 1024);
+                    hardInfo.TotalSizeMB = drive.TotalSize / (1024 * 1024);
                     hardDisks.Add(hardInfo);
                 }
             }

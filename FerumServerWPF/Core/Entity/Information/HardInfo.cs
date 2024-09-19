@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace FerumServerWPF.Core.Entity.Information
 {
@@ -10,31 +11,32 @@ namespace FerumServerWPF.Core.Entity.Information
     {
         public string Name { get; set; }
         public string Symbol { get; set; }
-        public double TotalFree { get; set; }
-        public double TotalSize { get; set; }
+        public double TotalFreeMB { get; set; }
+        public double TotalSizeMB { get; set; }
 
         public string GetFullName
         {
             get
             {
+                string fullName = Name;
                 return $"{Name} ({Symbol})"; 
             }
         }
         public int TotalValueProgressBar
         {
-            get { return Convert.ToInt32((TotalSize - TotalFree)); }
+            get { return Convert.ToInt32(100 - ((TotalFreeMB * 100) / TotalSizeMB)); }
         }
         public string GetStringSize
         {
             get
             {
-                return $"{TotalFree} ГБ свободно из {TotalSize} ГБ";
+                return $"{(TotalFreeMB / 1024)} ГБ свободно из {(TotalSizeMB / 1024)} ГБ";
             }
         }
 
         public string ColorBar { get
             {
-                double Percent = (TotalFree / 100) * TotalSize;
+                double Percent = 100 - (TotalFreeMB * 100) / TotalSizeMB;
                 if(Percent < 90)
                 {
                     return "#296688";

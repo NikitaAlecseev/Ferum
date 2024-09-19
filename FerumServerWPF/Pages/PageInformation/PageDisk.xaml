@@ -40,7 +40,7 @@
                                         </Grid.RowDefinitions>
                                         <Image Height="60" Source="/Assets/Icons/Information/icon_harddisk.png" Grid.RowSpan="3"/>
                                         <TextBlock Text="{Binding Path=GetFullName}" Foreground="White" FontSize="18" Grid.Column="1" VerticalAlignment="Center"/>
-                                        <ProgressBar Value="50" Grid.Column="1" Grid.Row="1" Height="20" Margin="0 0 10 0" Foreground="#296688"/>
+                                        <ProgressBar Value="{Binding Path=TotalValueProgressBar, Mode=OneWay}" Grid.Column="1" Grid.Row="1" Height="20" Margin="0 0 10 0" Foreground="{Binding Path=ColorBar}"/>
                                         <TextBlock Text="{Binding Path=GetStringSize}" Grid.Column="1" Grid.Row="2" Foreground="#BDBDBD" FontSize="16"/>
                                     </Grid>
                                 </Border>

@@ -45,7 +45,9 @@ namespace FerumServerWPF.Entity
             }
         }
 
-        
+        public string ColorIndicator { get; set; }
+
+
 
 
 
