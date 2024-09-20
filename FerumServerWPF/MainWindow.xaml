@@ -48,7 +48,7 @@
                                             <RowDefinition Height="30"/>
                                         </Grid.RowDefinitions>
                                         <Border x:Name="InnerBorder" Background="#030411" Grid.RowSpan="4" CornerRadius="20"/>
-                                        <Border Height="10" Width="10" CornerRadius="50" Background="#4AD719" HorizontalAlignment="Right" Margin="0 0 10 0"/>
+                                        <Border Height="10" Width="10" CornerRadius="50" Background="{Binding Path=ColorIndicator}" HorizontalAlignment="Right" Margin="0 0 10 0"/>
                                         <Image  Height="70" Width="70" Source="/Assets/Icons/Icon_Computer.png" Grid.Row="1"/>
                                         <TextBlock Text="{Binding Path=HostName}" Foreground="White" Grid.Row="2" TextAlignment="Center" FontSize="18"/>
                                         <TextBlock Text="{Binding Path=VersionAgent}" Foreground="#393A47" FontSize="16" Grid.Row="3" TextAlignment="Center"/>

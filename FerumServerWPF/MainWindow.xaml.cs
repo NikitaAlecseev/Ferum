@@ -88,7 +88,7 @@ namespace FerumServerWPF
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            GlobalVar.SelectHostName = "k1-333-10";
+            GlobalVar.SelectHostName = "DESKTOP-512C0M1";
             WindowView windView = new WindowView("k1-333-10"); // TODO: сделать по нормальному
             windView.Show();
         }

@@ -15,7 +15,7 @@ namespace FerumServerWPF.Core.DB
         string user = "admin"; // Имя пользователя
         string password = "Qwerty12$"; // Пароль пользователя
 
-        SqlConnection connection = new SqlConnection($"Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\DB\\FerumDatabase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
+        SqlConnection connection = new SqlConnection($"Data Source=DESKTOP-512C0M1\\SQLEXPRESS; Initial Catalog = Ferum;Integrated Security=True;");
 
         public void openConnection()
         {

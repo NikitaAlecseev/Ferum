@@ -27,7 +27,7 @@
                     <ItemsControl ItemsSource="{Binding InfoEntity.HardDisks}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Border Width="380" Height="100" Background="#030411" CornerRadius="20">
+                                <Border Width="380" Height="100" Background="#030411" CornerRadius="20" Margin="0 0 20 20">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="80"/>

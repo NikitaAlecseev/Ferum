@@ -152,6 +152,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Core\Adapter\ClientAdapter.cs" />
     <Compile Include="Core\DB\CommandDB.cs" />
     <Compile Include="Core\DB\DB.cs" />
     <Compile Include="Core\Entity\Information\HardInfo.cs" />

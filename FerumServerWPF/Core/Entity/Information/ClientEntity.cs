@@ -45,7 +45,19 @@ namespace FerumServerWPF.Entity
             }
         }
 
-        public string ColorIndicator { get; set; }
+        public string ColorIndicator { get {
+                TimeSpan result = DateTime.Now - LastUpdateInformation;
+                if (result.Minutes < 2)
+                {
+                    return "#4AD719";
+                }
+                else
+                {
+                    return "#d71919";
+                }
+                // #d7b919 желтый
+            }
+        }
 
 
 

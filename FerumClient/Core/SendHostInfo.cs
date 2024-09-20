@@ -10,7 +10,7 @@ namespace FerumClient.Core
 {
     public class SendHostInfo
     {
-        private static string _serverAddress = "172.16.2.93";
+        private static string _serverAddress = "192.168.0.140";
         private static int _serverPort = 2000;
         private static int _serverPortRequest = 2002;
         public static void SendHost(object state)

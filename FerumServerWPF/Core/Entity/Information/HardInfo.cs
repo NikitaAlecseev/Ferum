@@ -18,7 +18,7 @@ namespace FerumServerWPF.Core.Entity.Information
         {
             get
             {
-                string fullName = Name;
+                if (Name == "") Name = "Локальный диск";
                 return $"{Name} ({Symbol})"; 
             }
         }

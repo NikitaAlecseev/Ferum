@@ -72,9 +72,11 @@ namespace FerumServerWPF.Core.ViewModels
         {
             for (int i = 0; i < ClientEntity.Count; i++)
             {
+                //ClientEntity.RemoveAt(i);
                 if (ClientEntity[i].HostName == clientInfo.HostName)
                 {
                     ClientEntity[i].VersionAgent = clientInfo.VersionAgent;
+                    ClientEntity[i].LastUpdateInformation = DateTime.Now;
                 }
             }
         }

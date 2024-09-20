@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\GitRepository\Ferum\FerumServerWPF\obj\Debug\
+E:\GitRepository\Ferum\FerumServerWPF\obj\Debug\
 FerumServerWPF
 none
 false
 DEBUG;TRACE
-C:\GitRepository\Ferum\FerumServerWPF\App.xaml
+E:\GitRepository\Ferum\FerumServerWPF\App.xaml
 11-493557771
-7367213886
-341279383228
-43-1727005938
+7-1909195972
+35-1106556008
+43-1449385712
 Assets\Icons.xaml;MainWindow.xaml;Pages\PageInformation\PageDisk.xaml;Pages\PageInformation\PageMainInformation.xaml;Pages\PageInformation\PageMonitor.xaml;Pages\PageInformation\PageNetwork.xaml;Pages\PageInformation\PagePowershell.xaml;Pages\PageInformation\PagePrograms.xaml;Pages\PageInformation\PageTasks.xaml;Styles\MainStyle.xaml;WindowView.xaml;
 
 True
