@@ -30,6 +30,9 @@ namespace FerumServerWPF.Core.Server
 
             var thread = new Thread(TCPAcceptClient);
             thread.Start();
+
+            var threadAnswer = new Thread(TCPAcceptClientAnswer);
+            threadAnswer.Start();
         }
 
 
@@ -40,10 +43,15 @@ namespace FerumServerWPF.Core.Server
                 var client = _tcpListener.AcceptTcpClient();
                 var thread = new Thread(HandleClient);
                 thread.Start(client);
-
-                var clientAnswer = _tcpListenerAnswer.AcceptTcpClient();
-                var threadAnswer = new Thread(HandleClientAnswer);
-                threadAnswer.Start(clientAnswer);
+            }
+        }
+        private void TCPAcceptClientAnswer()
+        {
+            while (true)
+            {
+                 var clientAnswer = _tcpListenerAnswer.AcceptTcpClient();
+                 var threadAnswer = new Thread(HandleClientAnswer);
+                 threadAnswer.Start(clientAnswer);
             }
         }
 

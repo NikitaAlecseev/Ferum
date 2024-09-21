@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "E:\\GitRepository\\Ferum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\entity\\information\\cliententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\entity\\information\\cliententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\adapter\\clientadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\adapter\\clientadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\server\\dbserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\server\\dbserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,65 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientEntity.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Entity\\Information\\ClientEntity.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\Entity\\Information\\ClientEntity.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Entity\\Information\\ClientEntity.cs",
-              "RelativeToolTip": "FerumServerWPF\\Core\\Entity\\Information\\ClientEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T15:35:03.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientAdapter.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "RelativeToolTip": "FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T13:26:02.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindowVM.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "RelativeToolTip": "FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAEoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T13:17:52.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DBServer.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Server\\DBServer.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\Server\\DBServer.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Server\\DBServer.cs",
-              "RelativeToolTip": "FerumServerWPF\\Core\\Server\\DBServer.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAAEAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T13:12:59.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "FerumServerWPF\\MainWindow.xaml",
               "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\MainWindow.xaml",
               "RelativeToolTip": "FerumServerWPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-20T13:07:09.779Z",
+              "WhenOpened": "2024-09-21T11:45:36.198Z",
               "EditorCaption": ""
             }
           ]

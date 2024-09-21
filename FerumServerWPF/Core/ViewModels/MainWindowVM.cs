@@ -1,4 +1,5 @@
-﻿using FerumServerWPF.Core.DB;
+﻿using FerumServerWPF.Core.Adapter;
+using FerumServerWPF.Core.DB;
 using FerumServerWPF.Core.Server;
 using FerumServerWPF.Entity;
 using Newtonsoft.Json;
@@ -17,8 +18,8 @@ namespace FerumServerWPF.Core.ViewModels
 {
     internal class MainWindowVM: INotifyPropertyChanged
     {
-        private ObservableCollection<ClientEntity> clientEntity = new ObservableCollection<ClientEntity>();
-        public ObservableCollection<ClientEntity> ClientEntity
+        private ObservableCollection<ClientAdapter> clientEntity = new ObservableCollection<ClientAdapter>();
+        public ObservableCollection<ClientAdapter> ClientEntity
         {
             get { return clientEntity; }
             set
@@ -43,7 +44,7 @@ namespace FerumServerWPF.Core.ViewModels
             for(int i = 0; i < command.MainTable.Rows.Count; i++)
             {
                 MainInformationEntity clientInfo = JsonConvert.DeserializeObject<MainInformationEntity>(command.MainTable.Rows[i][2].ToString());
-                ClientEntity.Add(new ClientEntity(clientInfo.HostName, false, false, DateTime.Parse(command.MainTable.Rows[i][3].ToString()), clientInfo.VersionAgent));
+                ClientEntity.Add(new ClientAdapter(clientInfo.HostName, false, false, DateTime.Parse(command.MainTable.Rows[i][3].ToString()), clientInfo.VersionAgent));
             }
         }
 
@@ -52,7 +53,7 @@ namespace FerumServerWPF.Core.ViewModels
             App.Current.Dispatcher.Invoke((Action)delegate // <--- HERE
             {
                 if(!isExistsClient(clientInfo))
-                    ClientEntity.Add(new ClientEntity(clientInfo.HostName, false, false, DateTime.Now,clientInfo.VersionAgent));
+                    ClientEntity.Add(new ClientAdapter(clientInfo.HostName, false, false, DateTime.Now,clientInfo.VersionAgent));
             });
         }
 
@@ -77,6 +78,7 @@ namespace FerumServerWPF.Core.ViewModels
                 {
                     ClientEntity[i].VersionAgent = clientInfo.VersionAgent;
                     ClientEntity[i].LastUpdateInformation = DateTime.Now;
+                    ClientEntity[i].UpdateIndicatorColor(null,null);
                 }
             }
         }

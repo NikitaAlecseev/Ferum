@@ -77,6 +77,8 @@ namespace FerumClient
                 // Отправка информации о хосте на сервер
                 SendHostInfo.SendHost(jsonString);
 
+
+                Console.WriteLine("Пакет отправлен " + DateTime.Now.ToString());
                 // Ожидание 1 минут перед следующей записью
                 Thread.Sleep(60000);
             }

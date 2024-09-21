@@ -64,7 +64,6 @@ namespace FerumClient.Core
 
                 result = DateTime.Now - dtBootTime;
             }
-            Console.WriteLine($"Время работы компьютера: {result.Days} д. {result.Hours} ч. {result.Minutes} мин. {result.Seconds} сек.");
 
             return result;
         }
@@ -240,7 +239,6 @@ namespace FerumClient.Core
             ManagementObjectCollection results = searcher.Get();
 
             // Выводим информацию о видеокартах
-            Console.WriteLine("Информация о видеокартах:");
             foreach (ManagementObject result in results)
             {
                 // Модель видеокарты
