@@ -17,10 +17,11 @@ namespace FerumClient.Entity
         public List<UsersEntity> Users { get; set; } // пользователи на компьютере
         public List<RandomAccessMemory> RandomMemory { get; set; } // оперативная память
         public List<HardInfo> HardDisks { get; set; } // жесткие диски
+        public string CurrentProcess { get; set; } // текущий запущенный процесс
         public string VersionAgent { get; set; } // версия агента
 
 
-        public MainInformationEntity(string hostName, TimeSpan lastRestartComputer, string modelMotherboard, string modelProcessor, List<VideoCardEntity> modelsVideoCard, List<UsersEntity> users, List<RandomAccessMemory> randomMemory, List<HardInfo> hardDisk, string versionAgent)
+        public MainInformationEntity(string hostName, TimeSpan lastRestartComputer, string modelMotherboard, string modelProcessor, List<VideoCardEntity> modelsVideoCard, List<UsersEntity> users, List<RandomAccessMemory> randomMemory, List<HardInfo> hardDisk, string currentProcess, string versionAgent)
         {
             HostName = hostName;
             LastRestartComputer = lastRestartComputer;
@@ -30,6 +31,7 @@ namespace FerumClient.Entity
             Users = users;
             RandomMemory = randomMemory;
             HardDisks = hardDisk;
+            CurrentProcess = currentProcess;
             VersionAgent = versionAgent;
         }
     }

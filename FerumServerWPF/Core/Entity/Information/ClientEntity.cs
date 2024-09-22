@@ -11,8 +11,7 @@ namespace FerumServerWPF.Entity
     {
          string HostName { get; set; }
          string VersionAgent { get; set; }
-         bool GameMode { get; set; }
-         bool Warning { get; set; }
+         string CurrentProcess { get; set; }
          DateTime LastUpdateInformation { get; set; } // последнее обновление информации
     }
 }

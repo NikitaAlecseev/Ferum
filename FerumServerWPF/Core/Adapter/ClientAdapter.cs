@@ -1,9 +1,12 @@
-﻿using FerumServerWPF.Entity;
+﻿using FerumServerWPF.Core.DB;
+using FerumServerWPF.Entity;
+using FerumServerWPF.Entity.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
@@ -15,8 +18,7 @@ namespace FerumServerWPF.Core.Adapter
     {
         public string HostName { get; set; }
         public string VersionAgent { get; set; }
-        public bool GameMode { get; set; }
-        public bool Warning { get; set; }
+        public string CurrentProcess { get; set; }
 
         private DateTime lastUpdateInformation { get; set; }
         public DateTime LastUpdateInformation {
@@ -30,18 +32,17 @@ namespace FerumServerWPF.Core.Adapter
             }
         }
 
+        private Visibility gameModeVisibleUI { get; set; }
         public Visibility GameModeVisibleUI
         {
+            set
+            {
+                gameModeVisibleUI = value;
+                OnPropertyChanged("GameModeVisibleUI");
+            }
             get
             {
-                if (GameMode)
-                {
-                    return Visibility.Visible;
-                }
-                else
-                {
-                    return Visibility.Collapsed;
-                }
+                return gameModeVisibleUI;
             }
         }
 
@@ -49,14 +50,7 @@ namespace FerumServerWPF.Core.Adapter
         {
             get
             {
-                if (Warning)
-                {
-                    return Visibility.Visible;
-                }
-                else
-                {
-                    return Visibility.Collapsed;
-                }
+                return Visibility.Collapsed;
             }
         }
 
@@ -76,15 +70,15 @@ namespace FerumServerWPF.Core.Adapter
 
         DispatcherTimer updateIndicator = new DispatcherTimer();
 
-        public ClientAdapter(string hostName, bool gameMode, bool warning, DateTime lastUpdateInformation, string versionAgent)
+        public ClientAdapter(string hostName, DateTime lastUpdateInformation,string currentProcess, string versionAgent)
         {
             HostName = hostName;
-            GameMode = gameMode;
-            Warning = warning;
             LastUpdateInformation = lastUpdateInformation;
+            CurrentProcess = currentProcess;
             VersionAgent = versionAgent;
 
             startUpdateIndicator();
+            UpdateGameStatus();
         }
 
         private void startUpdateIndicator()
@@ -97,14 +91,33 @@ namespace FerumServerWPF.Core.Adapter
         public void UpdateIndicatorColor(object sender, EventArgs e)
         {
             TimeSpan result = DateTime.Now - LastUpdateInformation;
-            if (result.Minutes < 2)
+            if (result.Days <= 0 && result.Hours <= 0 && result.Minutes < 2)
             {
                 ColorIndicator = "#4AD719"; // зеленный
             }
             else
             {
-                ColorIndicator = "#d71919"; // красный
+                ColorIndicator = "#D71919"; // красный
             }
+        }
+        public void UpdateGameStatus()
+        {
+            CommandDB command = new CommandDB();
+            string[] words = Regex.Split(CurrentProcess, @"[\s.,!?;:-]");
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i] == "") continue;
+                if (words[i].Length < 4) continue;
+
+                command.LoadData($"Select * From ListGames Where NameGame like '%{words[i]}%'");
+                if(command.MainTable.Rows.Count > 0)
+                {
+                    GameModeVisibleUI = Visibility.Visible;
+                    return;
+                }
+            }
+            GameModeVisibleUI = Visibility.Collapsed;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

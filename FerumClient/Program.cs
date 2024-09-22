@@ -59,6 +59,9 @@ namespace FerumClient
                 // Получаем модели видеокарт
                 List<VideoCardEntity> videoCards = ComputerInformation.GetVideoCardEntity();
 
+                // Получаем активное окно
+                string currentProcess = ComputerInformation.GetActiveProcess();
+
                 // Получение информации о списке установленных программ
                 //List<string> installedProgramsInfo = ComputerInformation.GetInstalledProgramsInfo();
 
@@ -69,7 +72,7 @@ namespace FerumClient
                 List<HardInfo> hardDisks = ComputerInformation.GetHardDisks();
 
                 // Создание объекта с информацией о хосте
-                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories, hardDisks, "v0.5");
+                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories, hardDisks, currentProcess, "v0.6");
 
                 // Сериализация информации о хосте в формат JSON
                 string jsonString = JsonConvert.SerializeObject(hostObj);

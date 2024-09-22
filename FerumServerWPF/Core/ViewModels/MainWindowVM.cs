@@ -43,8 +43,7 @@ namespace FerumServerWPF.Core.ViewModels
             command.LoadData("Select * From Clients");
             for(int i = 0; i < command.MainTable.Rows.Count; i++)
             {
-                MainInformationEntity clientInfo = JsonConvert.DeserializeObject<MainInformationEntity>(command.MainTable.Rows[i][2].ToString());
-                ClientEntity.Add(new ClientAdapter(clientInfo.HostName, false, false, DateTime.Parse(command.MainTable.Rows[i][3].ToString()), clientInfo.VersionAgent));
+                ClientEntity.Add(new ClientAdapter(command.MainTable.Rows[i][1].ToString(), DateTime.Parse(command.MainTable.Rows[i][3].ToString()), command.MainTable.Rows[i][4].ToString(), command.MainTable.Rows[i][5].ToString()));
             }
         }
 
@@ -52,8 +51,13 @@ namespace FerumServerWPF.Core.ViewModels
         {
             App.Current.Dispatcher.Invoke((Action)delegate // <--- HERE
             {
-                if(!isExistsClient(clientInfo))
-                    ClientEntity.Add(new ClientAdapter(clientInfo.HostName, false, false, DateTime.Now,clientInfo.VersionAgent));
+                if (!isExistsClient(clientInfo))
+                {
+                    ClientAdapter newClient = new ClientAdapter(clientInfo.HostName, DateTime.Now, clientInfo.CurrentProcess, clientInfo.VersionAgent);
+                    newClient.UpdateIndicatorColor(null, null);
+                    ClientEntity.Add(newClient);
+                }
+
             });
         }
 
@@ -78,7 +82,9 @@ namespace FerumServerWPF.Core.ViewModels
                 {
                     ClientEntity[i].VersionAgent = clientInfo.VersionAgent;
                     ClientEntity[i].LastUpdateInformation = DateTime.Now;
+                    ClientEntity[i].CurrentProcess = clientInfo.CurrentProcess;
                     ClientEntity[i].UpdateIndicatorColor(null,null);
+                    ClientEntity[i].UpdateGameStatus();
                 }
             }
         }

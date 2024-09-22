@@ -1,5 +1,7 @@
 ﻿using FerumServerWPF.Core;
+using FerumServerWPF.Core.Adapter;
 using FerumServerWPF.Core.DB;
+using FerumServerWPF.Core.Server;
 using FerumServerWPF.Core.ViewModels;
 using FerumServerWPF.Entity;
 using System;
@@ -86,11 +88,25 @@ namespace FerumServerWPF
             
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void MenuItem_Open(object sender, RoutedEventArgs e)
         {
-            GlobalVar.SelectHostName = "DESKTOP-512C0M1";
+            ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
+            GlobalVar.SelectHostName = adapter.HostName;
+
             WindowView windView = new WindowView("k1-333-10"); // TODO: сделать по нормальному
             windView.Show();
+        }
+
+        private void MenuItem_GetCurrentProcess(object sender, RoutedEventArgs e)
+        {
+            ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
+            MessageBox.Show(adapter.CurrentProcess, "Текущий процесс", MessageBoxButton.OK,MessageBoxImage.Information);
+        }
+
+        private void MenuItem_Disconect(object sender, RoutedEventArgs e)
+        {
+            ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
+            ServerSendCommand.Send(adapter.HostName, "Disconect");
         }
     }
 }

@@ -354,6 +354,8 @@
     <Resource Include="Assets\Icons\Information\icon_harddisk.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Icons\ic_game.png" />
+    <Resource Include="Assets\Icons\ic_warning.png" />
     <Content Include="FerumDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

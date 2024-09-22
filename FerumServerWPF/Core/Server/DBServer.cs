@@ -46,13 +46,15 @@ namespace FerumServerWPF.Core.Server
         private void registerClientToDB(string _host,string _json)
         {
             CommandDB command = new CommandDB();
-            command.SendCommand($"Insert clients (Hostname,Information,DateUpdate) VALUES ('{_host}','{_json}',GETDATE())");
+            MainInformationEntity mainInformationEntity = GetMainInfoClientFromJson(_json);
+            command.SendCommand($"Insert clients (Hostname,Information,DateUpdate,CurrentProcess,Version) VALUES ('{_host}','{_json}',GETDATE(),'','{mainInformationEntity.VersionAgent}')");
         }
 
         private void updateClientToDB(string _host, string _json)
         {
             CommandDB command = new CommandDB();
-            command.SendCommand($"Update clients Set Information = '{_json}',DateUpdate = GETDATE() Where Hostname = '{_host}'");
+            MainInformationEntity mainInformationEntity = GetMainInfoClientFromJson(_json);
+            command.SendCommand($"Update clients Set Information = '{_json}',DateUpdate = GETDATE(), CurrentProcess = '{mainInformationEntity.CurrentProcess}', Version = '{mainInformationEntity.VersionAgent}' Where Hostname = '{_host}'");
         }
 
         private MainInformationEntity GetMainInfoClientFromJson(string _json)

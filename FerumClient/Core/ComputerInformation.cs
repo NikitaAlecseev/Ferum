@@ -317,21 +317,27 @@ namespace FerumClient.Core
         }
 
 
-        //public static List<ProcessEntity> GetActiveProcess()
-        //{
-        //    List<ProcessEntity> processEntityList = new List<ProcessEntity>();
+        public static string GetActiveProcess()
+        {
+            // Получаем дескриптор активного окна
+            IntPtr hWnd = GetForegroundWindow();
 
-        //    IntPtr handle = GetForegroundWindow();
-        //    StringBuilder windowText = new StringBuilder(256);
-        //    if (GetWindowText(handle, windowText, windowText.Capacity) > 0)
-        //    {
-        //        ProcessEntity processEntity = new ProcessEntity();
-        //        processEntity.TitleProcess = windowText.ToString();
-        //        processEntityList.Add(processEntity);
-        //    }
+            // Получаем длину заголовка окна
+            int length = GetWindowTextLength(hWnd);
 
-        //    return processEntityList;
-        //}
+            // Создаем строковый объект для хранения заголовка
+            StringBuilder sb = new StringBuilder(length + 1);
+
+            // Получаем заголовок окна
+            GetWindowText(hWnd, sb, sb.Capacity);
+
+            return sb.ToString();
+        }
+
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        static extern int GetWindowTextLength(IntPtr hWnd);
+
         //public static List<ProcessEntity> GetAllProcessEntityList()
         //{
         //    List<ProcessEntity> processEntityList = new List<ProcessEntity>();

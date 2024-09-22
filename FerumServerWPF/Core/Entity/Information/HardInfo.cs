@@ -30,7 +30,9 @@ namespace FerumServerWPF.Core.Entity.Information
         {
             get
             {
-                return $"{(TotalFreeMB / 1024)} ГБ свободно из {(TotalSizeMB / 1024)} ГБ";
+                double totalFreeGB = TotalFreeMB / 1024;
+                double totalSizeGB = TotalSizeMB / 1024;
+                return $"{String.Format("{0:0.00}",totalFreeGB)} ГБ свободно из {String.Format("{0:0.00}", totalSizeGB)} ГБ";
             }
         }
 
