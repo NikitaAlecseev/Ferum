@@ -5,10 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FerumServerWPF.Pages.PageInformation"
       mc:Ignorable="d" 
+      Loaded="Page_Loaded"
      d:DesignHeight="640" d:DesignWidth="850"
       Title="PageNetwork">
 
-    <Border CornerRadius="20" Background="#1E2033">
-        <TextBlock Text="Сеть" TextAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="30" FontWeight="Bold"/>
+    <Border Background="#0D0E1A">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Сетевые адаптеры" TextAlignment="Left" Margin="20 0 0 0" VerticalAlignment="Center" Foreground="White" FontSize="30" FontWeight="Bold"/>
+
+            <TreeView x:Name="treeView1" Margin="10,10,0,13" Background="#0D0E1A" BorderBrush="Transparent" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+            </TreeView>
+        </Grid>
     </Border>
 </Page>

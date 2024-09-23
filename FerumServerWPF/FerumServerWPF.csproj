@@ -70,6 +70,9 @@
     <Reference Include="LottieSharp, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0b9dd77ba52f039a, processorArchitecture=MSIL">
       <HintPath>..\packages\LottieSharp.2.3.0\lib\net47\LottieSharp.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialDesignColors, Version=3.1.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.3.1.0\lib\net462\MaterialDesignColors.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -156,6 +159,7 @@
     <Compile Include="Core\DB\CommandDB.cs" />
     <Compile Include="Core\DB\DB.cs" />
     <Compile Include="Core\Entity\Information\HardInfo.cs" />
+    <Compile Include="Core\Entity\Information\NetworkEntity.cs" />
     <Compile Include="Core\Entity\RequestInformation\InstalledProgram.cs" />
     <Compile Include="Core\EventSystem.cs" />
     <Compile Include="Core\GlobalVar.cs" />
@@ -356,6 +360,11 @@
   <ItemGroup>
     <Resource Include="Assets\Icons\ic_game.png" />
     <Resource Include="Assets\Icons\ic_warning.png" />
+    <Resource Include="Assets\Icons\Information\Network\ic_networkAdapter.png" />
+    <Resource Include="Assets\Icons\Information\Network\ic_ip.png" />
+    <Resource Include="Assets\Icons\Information\Network\ic_gateway.png" />
+    <Resource Include="Assets\Icons\Information\Network\ic_mask.png" />
+    <Resource Include="Assets\Icons\Information\Network\ic_networkAdapter2.png" />
     <Content Include="FerumDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

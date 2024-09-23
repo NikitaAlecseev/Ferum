@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "E:\\GitRepository\\Ferum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\adapter\\clientadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\adapter\\clientadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|e:\\gitrepository\\ferum\\ferumclient\\core\\computerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|solutionrelative:ferumclient\\core\\computerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|e:\\gitrepository\\ferum\\ferumclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|solutionrelative:ferumclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,78 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "FerumServerWPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAAGYAAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T12:40:58.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClientAdapter.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "RelativeToolTip": "FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T11:54:30.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindowVM.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "RelativeToolTip": "FerumServerWPF\\Core\\ViewModels\\MainWindowVM.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T11:46:49.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "FerumServerWPF\\MainWindow.xaml",
               "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\MainWindow.xaml",
               "RelativeToolTip": "FerumServerWPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-22T11:45:53.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ComputerInformation.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\ComputerInformation.cs",
-              "RelativeDocumentMoniker": "FerumClient\\Core\\ComputerInformation.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\ComputerInformation.cs",
-              "RelativeToolTip": "FerumClient\\Core\\ComputerInformation.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAAAEsBAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T11:13:38.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumClient\\Program.cs",
-              "RelativeDocumentMoniker": "FerumClient\\Program.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumClient\\Program.cs",
-              "RelativeToolTip": "FerumClient\\Program.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEoAAADXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T11:13:23.29Z",
+              "WhenOpened": "2024-09-23T13:28:02.303Z",
               "EditorCaption": ""
             }
           ]

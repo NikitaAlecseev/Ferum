@@ -467,3 +467,5 @@ E:\GitRepository\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.csproj.CoreCompil
 E:\GitRepository\Ferum\FerumServerWPF\obj\Debug\FerumSer.93B26378.Up2Date
 E:\GitRepository\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.exe
 E:\GitRepository\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.pdb
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\MaterialDesignColors.dll
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\MaterialDesignColors.pdb

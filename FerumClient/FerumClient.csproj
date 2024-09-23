@@ -64,10 +64,12 @@
     <Compile Include="Core\Entity\Information\ClientEntity.cs" />
     <Compile Include="Core\Entity\Information\HardInfo.cs" />
     <Compile Include="Core\Entity\Information\MainInformationEntity.cs" />
+    <Compile Include="Core\Entity\Information\NetworkEntity.cs" />
     <Compile Include="Core\Entity\Information\RandomAccessMemory.cs" />
     <Compile Include="Core\Entity\Information\UsersEntity.cs" />
     <Compile Include="Core\Entity\Information\VideoCardEntity.cs" />
     <Compile Include="Core\Entity\RequestInformation\InstalledProgram.cs" />
+    <Compile Include="Core\Helper\StringHelper.cs" />
     <Compile Include="Core\ListenerCommand.cs" />
     <Compile Include="Core\SendHostInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

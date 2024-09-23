@@ -34,7 +34,6 @@ namespace FerumClient
                 // Получение информации о хосте
                 var hostInfo = ComputerInformation.GetHostInfo();
 
-
                 // Получение информации о последней перезагрузки
                 var lastTimeRestart = ComputerInformation.GetLastRestartPC();
 
@@ -52,6 +51,9 @@ namespace FerumClient
 
                 // Получить модель процессор
                 string modelProcessorModel = ComputerInformation.GetProcessorModel();
+
+                // Получаем сетевые адаптер
+                List<NetworkEntity> networkEntities = ComputerInformation.GetNetworkEntities();
 
                 // Получаем оперативную память
                 List<RandomAccessMemory> randomAccessMemories = ComputerInformation.GetRandomAccessMemory();
@@ -72,7 +74,7 @@ namespace FerumClient
                 List<HardInfo> hardDisks = ComputerInformation.GetHardDisks();
 
                 // Создание объекта с информацией о хосте
-                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories, hardDisks, currentProcess, "v0.6");
+                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard,modelProcessorModel, videoCards, usersInfo,randomAccessMemories, hardDisks, currentProcess,networkEntities, "v0.8");
 
                 // Сериализация информации о хосте в формат JSON
                 string jsonString = JsonConvert.SerializeObject(hostObj);
@@ -80,8 +82,6 @@ namespace FerumClient
                 // Отправка информации о хосте на сервер
                 SendHostInfo.SendHost(jsonString);
 
-
-                Console.WriteLine("Пакет отправлен " + DateTime.Now.ToString());
                 // Ожидание 1 минут перед следующей записью
                 Thread.Sleep(60000);
             }
