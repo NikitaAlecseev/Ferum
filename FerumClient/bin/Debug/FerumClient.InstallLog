@@ -1,0 +1,132 @@
+﻿Выполняется установка сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Устанавливается служба FerumService...
+Создается исходный EventLog FerumService в журнале Application...
+Выполняется откат для сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Восстанавливается исходное состояние журнала событий для источника FerumService.
+При выполнении программы установки System.Diagnostics.EventLogInstaller на этапе отката возникло исключение.
+System.Security.SecurityException: Источник не найден, но не удалось выполнить поиск по нескольким или всем журналам событий.  Недоступные журналы: Security, State.
+На этапе отката процедуры установки возникло исключение. Это исключение будет проигнорировано, и откат будет продолжен. Однако после завершения отката компьютер может не вернуться полностью в исходное состояние.
+Выполняется установка сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Устанавливается служба FerumService...
+Служба FerumService успешно установлена.
+Создается исходный EventLog FerumService в журнале Application...
+Выполняется фиксация сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+При выполнении программы установки System.Diagnostics.EventLogInstaller во время установки возникло исключение.
+System.Security.SecurityException: Запрошенный доступ к реестру запрещен.
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+При выполнении программы установки System.Diagnostics.EventLogInstaller во время установки возникло исключение.
+System.Security.SecurityException: Запрошенный доступ к реестру запрещен.
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+Выполняется удаление службы FerumService из системы...
+Служба FerumService успешно удалена из системы.
+Выполняется установка сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Устанавливается служба FerumService...
+Служба FerumService успешно установлена.
+Создается исходный EventLog FerumService в журнале Application...
+Выполняется фиксация сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+Выполняется удаление службы FerumService из системы...
+Служба FerumService успешно удалена из системы.
+Выполняется установка сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Устанавливается служба FerumService...
+Служба FerumService успешно установлена.
+Создается исходный EventLog FerumService в журнале Application...
+Выполняется фиксация сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+Выполняется удаление службы FerumService из системы...
+Служба FerumService успешно удалена из системы.
+Выполняется установка сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Устанавливается служба FerumService...
+Служба FerumService успешно установлена.
+Создается исходный EventLog FerumService в журнале Application...
+Выполняется фиксация сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+Выполняется удаление службы FerumService из системы...
+Служба FerumService успешно удалена из системы.
+Попытка останова службы FerumService.
+Выполняется установка сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Устанавливается служба FerumService...
+Служба FerumService успешно установлена.
+Создается исходный EventLog FerumService в журнале Application...
+Выполняется фиксация сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe

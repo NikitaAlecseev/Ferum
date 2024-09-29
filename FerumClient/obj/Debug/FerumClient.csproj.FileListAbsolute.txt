@@ -67,3 +67,5 @@ E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.csproj.CoreCompileInput
 E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumCli.6AABD557.Up2Date
 E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.exe
 E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.pdb
+E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.ProjectInstaller.resources
+E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.csproj.GenerateResource.cache

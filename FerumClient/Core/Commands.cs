@@ -1,4 +1,5 @@
-﻿using FerumClient.Core.Entity.RequestInformation;
+﻿using FerumClient.Core.ComputerInformation;
+using FerumClient.Core.Entity.RequestInformation;
 using FerumClient.Entity;
 using Newtonsoft.Json;
 using System;
@@ -41,7 +42,7 @@ namespace FerumClient.Core
                     //SendHostInfo.SendHost(jsonString);
                     break;
                 case "Get Programs":
-                    List<InstalledProgram> installed = ComputerInformation.GetInstalledProgramsFromRegistry();
+                    List<InstalledProgram> installed = Computer.GetInstalledProgramsFromRegistry();
                     string json = JsonConvert.SerializeObject(installed);
                     SendHostInfo.SendHostRequest(json);
                     break;

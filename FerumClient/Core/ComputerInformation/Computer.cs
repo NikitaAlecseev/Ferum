@@ -4,46 +4,20 @@ using FerumClient.Entity;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.DirectoryServices;
-using System.DirectoryServices.ActiveDirectory;
 using System.IO;
 using System.Linq;
 using System.Management;
-using System.Net.NetworkInformation;
-using System.Net.Sockets;
-using System.Net;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 using System.Text;
-using System.Threading.Tasks;
-using FerumClient.Core.Helper;
 
-namespace FerumClient.Core
+namespace FerumClient.Core.ComputerInformation
 {
-    public class ComputerInformation
+    internal class Computer
     {
         public static string GetHostInfo()
         {
             return Environment.MachineName;
-        }
-
-        public static string GetLastShutdownInfo()
-        {
-            string query = "SELECT * FROM Win32_OperatingSystem";
-            string result = "";
-            using (ManagementObjectSearcher searcher = new ManagementObjectSearcher(query))
-            {
-                foreach (ManagementObject obj in searcher.Get())
-                {
-                    if (obj["LastBootUpTime"] != null)
-                    {
-                        DateTime lastBootUpTime = ManagementDateTimeConverter.ToDateTime(obj["LastBootUpTime"].ToString());
-                        result = lastBootUpTime.AddDays(-1).ToString(); // Поскольку LastBootUpTime возвращает время последней загрузки
-                    }
-                }
-            }
-            return result;
         }
 
         public static TimeSpan GetLastRestartPC()
@@ -171,15 +145,17 @@ namespace FerumClient.Core
                         using (RegistryKey subKey = key.OpenSubKey(subKeyName))
                         {
                             string login = subKey.GetValue("LoggedOnUser") as string;
-                            if(login != currrentUserName)
+                            bool isLoginExists = users.All(x => x.Login == login); // существует ли он в списках
+
+                            if (login != currrentUserName && isLoginExists == false)
                             {
                                 users.Add(new UsersEntity(login, false));
                             }
-                        }                 
-                    }             
+                        }
+                    }
                 }
             }
-                return users;
+            return users;
         }
 
         public static List<RandomAccessMemory> GetRandomAccessMemory()
@@ -208,7 +184,6 @@ namespace FerumClient.Core
             return outResult;
         }
 
-
         public static List<HardInfo> GetHardDisks()
         {
             DriveInfo[] drives = DriveInfo.GetDrives();
@@ -231,7 +206,6 @@ namespace FerumClient.Core
             return hardDisks;
         }
 
-
         public static List<VideoCardEntity> GetVideoCardEntity()
         {
             List<VideoCardEntity> outVideoCards = new List<VideoCardEntity>();
@@ -252,7 +226,7 @@ namespace FerumClient.Core
                 //ulong memorySize = (ulong)result["AdapterRAM"];
                 //double memoryMB = (double)memorySize / (1024 * 1024);
 
-                outVideoCards.Add(new VideoCardEntity(model,"0"));
+                outVideoCards.Add(new VideoCardEntity(model, "0"));
             }
 
 
@@ -320,60 +294,6 @@ namespace FerumClient.Core
             return programs;
         }
 
-        public static List<NetworkEntity> GetNetworkEntities()
-        {
-            // Сетевой класс
-            List<NetworkEntity> networkEntity = new List<NetworkEntity>();
-            // Получаем список сетевых адаптеров
-            NetworkInterface[] adapters = NetworkInterface.GetAllNetworkInterfaces();
-
-            // Выводим информацию о каждом адаптере
-            foreach (NetworkInterface adapter in adapters)
-            {
-                List<string> ipAddressList = new List<string>();
-                List<string> maskList = new List<string>();
-                List<string> gatewayAddressList = new List<string>();
-                string macAddressString;
-
-                // Получаем IP-адреса
-                IPInterfaceProperties properties = adapter.GetIPProperties();
-                UnicastIPAddressInformationCollection addresses = properties.UnicastAddresses;
-                foreach (UnicastIPAddressInformation address in addresses)
-                {
-                    if (address.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
-                    {
-                        ipAddressList.Add(address.Address.ToString());
-                    }
-                }
-
-                // Получаем MAC-адрес
-                PhysicalAddress macAddress = adapter.GetPhysicalAddress();
-                macAddressString = StringHelper.AddHyphensToText(macAddress.ToString());
-
-                // Получаем маску подсети
-                foreach (UnicastIPAddressInformation address in properties.UnicastAddresses)
-                {
-                    if (address.Address.AddressFamily == AddressFamily.InterNetwork)
-                    {
-                        IPAddress subnetMask = address.IPv4Mask; // Получаем маску подсети
-                        maskList.Add(subnetMask.ToString());
-                        break; // Выводим только одну маску подсети
-                    }
-                }
-
-                foreach (GatewayIPAddressInformation gatewayAddressInfo in properties.GatewayAddresses)
-                {
-                    // Получаем IP-адрес шлюза
-                    IPAddress gatewayAddress = gatewayAddressInfo.Address;
-                    gatewayAddressList.Add(gatewayAddress.ToString());
-                }
-
-                networkEntity.Add(new NetworkEntity(adapter.Name, adapter.NetworkInterfaceType.ToString(), adapter.Description, macAddressString, maskList, gatewayAddressList, ipAddressList));
-            }
-            return networkEntity;
-        }
-
-
         public static string GetActiveProcess()
         {
             // Получаем дескриптор активного окна
@@ -391,9 +311,6 @@ namespace FerumClient.Core
             return sb.ToString();
         }
 
-
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        static extern int GetWindowTextLength(IntPtr hWnd);
 
         //public static List<ProcessEntity> GetAllProcessEntityList()
         //{
@@ -417,6 +334,9 @@ namespace FerumClient.Core
         //    return processEntityList;
         //}
 
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        static extern int GetWindowTextLength(IntPtr hWnd);
 
         #region libTitleWindowProcess
         // Импорт функции из user32.dll для получения активного окна
