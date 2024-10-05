@@ -2,6 +2,7 @@
 using FerumServerWPF.Core.DB;
 using FerumServerWPF.Core.Server;
 using FerumServerWPF.Entity;
+using Microsoft.Win32;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

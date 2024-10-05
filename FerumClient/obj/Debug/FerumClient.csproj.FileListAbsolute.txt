@@ -69,3 +69,5 @@ E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.exe
 E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.pdb
 E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.ProjectInstaller.resources
 E:\GitRepository\Ferum\FerumClient\obj\Debug\FerumClient.csproj.GenerateResource.cache
+E:\GitRepository\Ferum\FerumClient\bin\Debug\Rdp.Terminal.Core.dll
+E:\GitRepository\Ferum\FerumClient\bin\Debug\Rdp.Terminal.Core.pdb

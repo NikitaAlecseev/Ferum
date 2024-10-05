@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -59,9 +61,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\CheckPermission.cs" />
     <Compile Include="Core\Commands.cs" />
     <Compile Include="Core\ComputerInformation\Computer.cs" />
     <Compile Include="Core\ComputerInformation\NetworkInfo.cs" />
+    <Compile Include="Core\Entity\RDPConnectEntity.cs" />
+    <Compile Include="Core\GlobalVar.cs" />
+    <Compile Include="Core\RDP\DelegateCommand.cs" />
     <Compile Include="Core\Entity\Client\Command.cs" />
     <Compile Include="Core\Entity\Information\ClientEntity.cs" />
     <Compile Include="Core\Entity\Information\HardInfo.cs" />
@@ -73,6 +79,7 @@
     <Compile Include="Core\Entity\RequestInformation\InstalledProgram.cs" />
     <Compile Include="Core\Helper\StringHelper.cs" />
     <Compile Include="Core\ListenerCommand.cs" />
+    <Compile Include="Core\RDP\RDPClient.cs" />
     <Compile Include="Core\SendHostInfo.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
@@ -107,5 +114,18 @@
       <DependentUpon>ProjectInstaller.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Nikit\Desktop\remotedesktopterminalservice-master\Rdp.Terminal.Core\Rdp.Terminal.Core.csproj">
+      <Project>{e989bd6a-29a2-42f0-b21f-0e94befc9f70}</Project>
+      <Name>Rdp.Terminal.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\vocaluxe.dependencies.netfwtypelib.1.0.1\build\vocaluxe.dependencies.netfwtypelib.targets" Condition="Exists('..\packages\vocaluxe.dependencies.netfwtypelib.1.0.1\build\vocaluxe.dependencies.netfwtypelib.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\vocaluxe.dependencies.netfwtypelib.1.0.1\build\vocaluxe.dependencies.netfwtypelib.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\vocaluxe.dependencies.netfwtypelib.1.0.1\build\vocaluxe.dependencies.netfwtypelib.targets'))" />
+  </Target>
 </Project>

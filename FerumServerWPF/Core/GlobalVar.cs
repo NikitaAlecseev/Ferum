@@ -8,6 +8,12 @@ namespace FerumServerWPF.Core
 {
     public class GlobalVar
     {
-        public static string SelectHostName = ""; // TODO: удалить эту хуйню и сделатиь по нормальному
+        public static string SQLServer;
+        public static string LoginSQL;
+        public static string PasswordSQL;
+        public static string MainPort;
+        public static string RequestPort;
+
+        public static string SelectHostName = ""; // TODO: удалить эту хуйню и сделать по нормальному
     }
 }

@@ -64,6 +64,7 @@
                 <ListBox.ContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Открыть" FontSize="18" Click="MenuItem_Open"/>
+                        <MenuItem Header="Удаленный рабочий стол" FontSize="18" Click="MenuItem_RDP"/>
                         <MenuItem Header="Получить текущий процесс" FontSize="18" Click="MenuItem_GetCurrentProcess"/>
                         <MenuItem Header="Изменения в характеристиках" FontSize="18" IsEnabled="False"/>
                         <MenuItem Header="Отключить" FontSize="18" Click="MenuItem_Disconect"/>

@@ -16,8 +16,6 @@ namespace FerumServerWPF.Core.DB
         public DataTable MainTable = new DataTable();
         private DataSet dataSet = null;
 
-
-
         /// <summary>
         /// Метод для загрузки данных из БД в DataTable (MainTable)
         /// </summary>

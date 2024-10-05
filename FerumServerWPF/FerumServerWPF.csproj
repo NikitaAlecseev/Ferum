@@ -161,9 +161,13 @@
     <Compile Include="Core\DB\DB.cs" />
     <Compile Include="Core\Entity\Information\HardInfo.cs" />
     <Compile Include="Core\Entity\Information\NetworkEntity.cs" />
+    <Compile Include="Core\Entity\RDPConnectEntity.cs" />
     <Compile Include="Core\Entity\RequestInformation\InstalledProgram.cs" />
     <Compile Include="Core\EventSystem.cs" />
     <Compile Include="Core\GlobalVar.cs" />
+    <Compile Include="Core\RDP\DelegateCommand.cs" />
+    <Compile Include="Core\RDP\NotificationObject.cs" />
+    <Compile Include="Core\RDP\PropertySupport.cs" />
     <Compile Include="Core\Server\DBServer.cs" />
     <Compile Include="Core\Server\ServerListener.cs" />
     <Compile Include="Core\Server\ServerSendCommand.cs" />
@@ -175,14 +179,7 @@
     <Compile Include="Core\Entity\Information\RandomAccessMemory.cs" />
     <Compile Include="Core\Entity\Information\UsersEntity.cs" />
     <Compile Include="Core\Entity\Information\VideoCardEntity.cs" />
-    <Compile Include="FerumDatabaseDataSet.cs">
-      <DependentUpon>FerumDatabaseDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="FerumDatabaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FerumDatabaseDataSet.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="Core\ViewModels\WindowRDPViewModel.cs" />
     <Compile Include="Pages\PageInformation\PageDisk.xaml.cs">
       <DependentUpon>PageDisk.xaml</DependentUpon>
     </Compile>
@@ -203,6 +200,9 @@
     </Compile>
     <Compile Include="Pages\PageInformation\PageTasks.xaml.cs">
       <DependentUpon>PageTasks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowRDP.xaml.cs">
+      <DependentUpon>WindowRDP.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowView.xaml.cs">
       <DependentUpon>WindowView.xaml</DependentUpon>
@@ -254,6 +254,10 @@
     <Page Include="Styles\MainStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowRDP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -278,17 +282,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Animations\load.json" />
-    <None Include="FerumDatabaseDataSet.xsc">
-      <DependentUpon>FerumDatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="FerumDatabaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FerumDatabaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FerumDatabaseDataSet.xss">
-      <DependentUpon>FerumDatabaseDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -366,13 +359,6 @@
     <Resource Include="Assets\Icons\Information\Network\ic_gateway.png" />
     <Resource Include="Assets\Icons\Information\Network\ic_mask.png" />
     <Resource Include="Assets\Icons\Information\Network\ic_networkAdapter2.png" />
-    <Content Include="FerumDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FerumDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>FerumDatabase.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -385,6 +371,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Nikit\Desktop\remotedesktopterminalservice-master\Rdp.Terminal.Core\Rdp.Terminal.Core.csproj">
+      <Project>{e989bd6a-29a2-42f0-b21f-0e94befc9f70}</Project>
+      <Name>Rdp.Terminal.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.3\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.3\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />

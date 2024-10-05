@@ -14,7 +14,7 @@ namespace FerumServerWPF.Core
         private static readonly string _privateKeyFile = "privateKey.xml";
 
         /// <summary>
-        /// Создаеие пары ключей
+        /// Создание пары ключей
         /// </summary>
         private void createKey()
         {

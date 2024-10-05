@@ -8,8 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ferumdatabase.mdf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ferumdatabase_log.ldf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libskiasharp.dylib")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libskiasharp.dylib")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libskiasharp.dll")]

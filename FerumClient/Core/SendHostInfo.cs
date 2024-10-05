@@ -10,9 +10,6 @@ namespace FerumClient.Core
 {
     public class SendHostInfo
     {
-        private static string _serverAddress = "192.168.0.140";
-        private static int _serverPort = 2000;
-        private static int _serverPortRequest = 2002;
         public static void SendHost(object state)
         {
             var jsonString = state as string;
@@ -24,7 +21,7 @@ namespace FerumClient.Core
 
             try
             {
-                using (var client = new TcpClient(_serverAddress, _serverPort))
+                using (var client = new TcpClient(GlobalVar.IPServer, Convert.ToInt32(GlobalVar.MainPort)))
                 {
                     using (var stream = client.GetStream())
                     using (var writer = new StreamWriter(stream))
@@ -56,7 +53,7 @@ namespace FerumClient.Core
 
             try
             {
-                using (var client = new TcpClient(_serverAddress, _serverPortRequest))
+                using (var client = new TcpClient(GlobalVar.IPServer, Convert.ToInt32(GlobalVar.RequestPort)))
                 {
                     using (var stream = client.GetStream())
                     using (var writer = new StreamWriter(stream))

@@ -130,3 +130,45 @@ System.Security.SecurityException: Запрошенный доступ к рее
    logtoconsole = 
    logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
    assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+Выполняется удаление службы FerumService из системы...
+Служба FerumService успешно удалена из системы.
+Попытка останова службы FerumService.
+Выполняется установка сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Устанавливается служба FerumService...
+Служба FerumService успешно установлена.
+Создается исходный EventLog FerumService в журнале Application...
+Выполняется фиксация сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+Выполняется удаление службы FerumService из системы...
+Служба FerumService успешно удалена из системы.
+Попытка останова службы FerumService.
+Выполняется удаление сборки 'E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.InstallLog
+   assemblypath = E:\GitRepository\Ferum\FerumClient\bin\Debug\FerumClient.exe
+Выполняется удаление источника EventLog FerumService.
+Предупреждение. Источник FerumService не зарегистрирован на локальном компьютере.
+Выполняется удаление службы FerumService из системы...
+При выполнении программы установки System.ServiceProcess.ServiceInstaller во время установки возникло исключение.
+System.ComponentModel.Win32Exception: Указанная служба не установлена
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.

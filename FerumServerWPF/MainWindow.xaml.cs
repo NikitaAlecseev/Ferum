@@ -4,6 +4,7 @@ using FerumServerWPF.Core.DB;
 using FerumServerWPF.Core.Server;
 using FerumServerWPF.Core.ViewModels;
 using FerumServerWPF.Entity;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -21,6 +22,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static Mysqlx.Expect.Open.Types.Condition.Types;
 
 namespace FerumServerWPF
 {
@@ -107,6 +109,14 @@ namespace FerumServerWPF
         {
             ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
             ServerSendCommand.Send(adapter.HostName, "Disconect");
+        }
+
+        private void MenuItem_RDP(object sender, RoutedEventArgs e)
+        {
+            ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
+            WindowRDP windowRDP = new WindowRDP(adapter.HostName);
+            windowRDP.Show();
+            ServerSendCommand.Send(adapter.HostName, "RDP");
         }
     }
 }

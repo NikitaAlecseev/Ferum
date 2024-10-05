@@ -15,12 +15,13 @@ namespace FerumServerWPF.Core.DB
         string user = "admin"; // Имя пользователя
         string password = "Qwerty12$"; // Пароль пользователя
 
-        SqlConnection connection = new SqlConnection($"Data Source=DESKTOP-512C0M1\\SQLEXPRESS; Initial Catalog = Ferum;Integrated Security=True;");
+        SqlConnection connection; // Data Source=PK-NIKITA\\SQLEXPRESS; Initial Catalog = Ferum;Integrated Security=True;
 
         public void openConnection()
         {
             try
             {
+                connection = new SqlConnection($"Data Source={GlobalVar.SQLServer};Initial Catalog = Ferum;User ID = {GlobalVar.LoginSQL};Password = {GlobalVar.PasswordSQL}");
                 connection.Open();
             }
             catch (Exception ex)
