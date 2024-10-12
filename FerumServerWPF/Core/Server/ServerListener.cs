@@ -13,19 +13,17 @@ namespace FerumServerWPF.Core.Server
     public class ServerListener
     {
         private static TcpListener _tcpListener;
-        private static int _portListener = 2000;
 
-        private static TcpListener _tcpListenerAnswer; // слушатель ответов от запросов со стороны сервера к клиенту
-        private static int _portAnswer = 2002;
+        private static TcpListener _tcpListenerAnswer; // слушатель ответов от запросов со стороны клиента к серверу
 
         private DBServer dbServer = new DBServer();
 
         public ServerListener()
         {
-            _tcpListener = new TcpListener(IPAddress.Any, _portListener);
+            _tcpListener = new TcpListener(IPAddress.Any, Convert.ToInt32(GlobalVar.MainPort));
             _tcpListener.Start();
 
-            _tcpListenerAnswer = new TcpListener(IPAddress.Any, _portAnswer);
+            _tcpListenerAnswer = new TcpListener(IPAddress.Any, Convert.ToInt32(GlobalVar.RequestPort));
             _tcpListenerAnswer.Start();
 
             var thread = new Thread(TCPAcceptClient);

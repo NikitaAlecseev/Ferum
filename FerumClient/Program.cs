@@ -74,7 +74,7 @@ namespace FerumClient
                 List<HardInfo> hardDisks = Computer.GetHardDisks();
 
                 // Создание объекта с информацией о хосте
-                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard, modelProcessorModel, videoCards, usersInfo, randomAccessMemories, hardDisks, currentProcess, networkEntities, "v0.9");
+                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard, modelProcessorModel, videoCards, usersInfo, randomAccessMemories, hardDisks, currentProcess, networkEntities, "v0.9.1");
 
                 // Сериализация информации о хосте в формат JSON
                 string jsonString = JsonConvert.SerializeObject(hostObj);
@@ -93,15 +93,24 @@ namespace FerumClient
         /// </summary>
         private static void LoadValueServer()
         {
+            GlobalVar.IPServer = "192.168.0.140";
+            GlobalVar.MainPort = "2000";
+            GlobalVar.RequestPort = "2001";
+
             const string PathReg = @"SOFTWARE\WOW6432Node\PineDeveloper\FerumClient\";
+
             // Попытка открыть ключ реестра
             using (RegistryKey key = Registry.LocalMachine.OpenSubKey(PathReg))
             {
                 if (key != null)
                 {
-                    GlobalVar.IPServer = key.GetValue("IPServer") as string;
-                    GlobalVar.MainPort = key.GetValue("MainPort") as string;
-                    GlobalVar.RequestPort = key.GetValue("RequestPort") as string;
+                    //GlobalVar.IPServer = key.GetValue("IPServer") as string;
+                    //GlobalVar.MainPort = key.GetValue("MainPort") as string;
+                    //GlobalVar.RequestPort = key.GetValue("RequestPort") as string;
+
+                    GlobalVar.IPServer = "192.168.0.140";
+                    GlobalVar.MainPort = "2000";
+                    GlobalVar.RequestPort = "2001";
                 }
             }
         }

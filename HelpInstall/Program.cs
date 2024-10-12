@@ -23,27 +23,10 @@ namespace HelpInstall
                         string path = args[1].Replace("\"", "");
                         SetAutoUpload(path);
                         CheckPermission.checkAndSetPermission(path);
-                        Console.Read();
                         break;
                     case "Uninst":
-                        if (IsAdministrator())
-                        {
-                            Console.WriteLine("Запущено от имени админа!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Нет прав администратора!");
-                        }
-
                         DeleteRegistryKey("FerumClient");
                         CheckPermission.DeleteFirewallRule();
-
-
-                        // Создание файла в папке установки 
-                        string filePath = Path.Combine("C:/Debug/", "test.txt");
-                        File.WriteAllText(filePath, "Удалено!");
-
-                        Console.Read();
                         break;
                 }
 
