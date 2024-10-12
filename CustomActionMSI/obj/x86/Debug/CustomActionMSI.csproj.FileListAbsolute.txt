@@ -1,0 +1,10 @@
+E:\GitRepository\Ferum\CustomActionMSI\bin\Debug\CustomActionMSI.dll
+E:\GitRepository\Ferum\CustomActionMSI\bin\Debug\CustomActionMSI.CA.dll
+E:\GitRepository\Ferum\CustomActionMSI\bin\Debug\CustomActionMSI.pdb
+E:\GitRepository\Ferum\CustomActionMSI\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+E:\GitRepository\Ferum\CustomActionMSI\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+E:\GitRepository\Ferum\CustomActionMSI\obj\x86\Debug\CustomActionMSI.csproj.AssemblyReference.cache
+E:\GitRepository\Ferum\CustomActionMSI\obj\x86\Debug\CustomActionMSI.csproj.CoreCompileInputs.cache
+E:\GitRepository\Ferum\CustomActionMSI\obj\x86\Debug\CustomAc.BA18EEFE.Up2Date
+E:\GitRepository\Ferum\CustomActionMSI\obj\x86\Debug\CustomActionMSI.dll
+E:\GitRepository\Ferum\CustomActionMSI\obj\x86\Debug\CustomActionMSI.pdb

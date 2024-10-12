@@ -393,7 +393,6 @@ E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\arm64\libSkiaSharp.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe.config
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.exe
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\FerumServerWPF.pdb
-E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\BouncyCastle.Cryptography.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.Streams.dll
@@ -402,7 +401,6 @@ E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\LottieSharp.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\MaterialDesignColors.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.dll
-E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\MySql.Data.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Newtonsoft.Json.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Rdp.Terminal.Core.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.dll
@@ -421,7 +419,6 @@ E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\System.Runtime.CompilerServices.
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\ZstdSharp.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Rdp.Terminal.Core.pdb
-E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\BouncyCastle.Cryptography.xml
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.pdb
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Google.Protobuf.xml
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\K4os.Compression.LZ4.xml
@@ -431,7 +428,6 @@ E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\MaterialDesignColors.pdb
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Microsoft.Xaml.Behaviors.xml
-E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\MySql.Data.xml
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\Newtonsoft.Json.xml
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.pdb
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\SkiaSharp.xml

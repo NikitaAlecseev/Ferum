@@ -61,7 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\CheckPermission.cs" />
     <Compile Include="Core\Commands.cs" />
     <Compile Include="Core\ComputerInformation\Computer.cs" />
     <Compile Include="Core\ComputerInformation\NetworkInfo.cs" />

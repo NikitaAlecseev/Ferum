@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="Ferum" Height="720" Width="1080" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent" Loaded="Window_Loaded">
 
-    <Border Background="#0D0E1A" CornerRadius="15" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+    <Border x:Name="MainBorder" Background="#0D0E1A" CornerRadius="15" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="60"/>

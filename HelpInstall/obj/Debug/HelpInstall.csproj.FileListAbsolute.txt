@@ -1,0 +1,7 @@
+E:\GitRepository\Ferum\HelpInstall\bin\Debug\HelpInstall.exe.config
+E:\GitRepository\Ferum\HelpInstall\bin\Debug\HelpInstall.exe
+E:\GitRepository\Ferum\HelpInstall\bin\Debug\HelpInstall.pdb
+E:\GitRepository\Ferum\HelpInstall\obj\Debug\HelpInstall.csproj.AssemblyReference.cache
+E:\GitRepository\Ferum\HelpInstall\obj\Debug\HelpInstall.csproj.CoreCompileInputs.cache
+E:\GitRepository\Ferum\HelpInstall\obj\Debug\HelpInstall.exe
+E:\GitRepository\Ferum\HelpInstall\obj\Debug\HelpInstall.pdb

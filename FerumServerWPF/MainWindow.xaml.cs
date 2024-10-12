@@ -22,7 +22,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static Mysqlx.Expect.Open.Types.Condition.Types;
 
 namespace FerumServerWPF
 {
@@ -50,11 +49,13 @@ namespace FerumServerWPF
                     this.Width = 1080;
                     this.Height = 720;
                     IsMaximized = false;
+                    MainBorder.CornerRadius = new CornerRadius(15);
                 }
                 else
                 {
                     this.WindowState = WindowState.Maximized;
                     IsMaximized = true;
+                    MainBorder.CornerRadius = new CornerRadius(0);
                 }
             }
         }
@@ -74,20 +75,28 @@ namespace FerumServerWPF
         private void btnRestore_Click(object sender, RoutedEventArgs e)
         {
             if (WindowState == WindowState.Normal)
+            {
                 WindowState = WindowState.Maximized;
+                MainBorder.CornerRadius = new CornerRadius(0);
+            }
             else
+            {
                 WindowState = WindowState.Normal;
+                MainBorder.CornerRadius = new CornerRadius(15);
+            }
+
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
+            MainBorder.CornerRadius = new CornerRadius(15);
         }
 
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void MenuItem_Open(object sender, RoutedEventArgs e)
@@ -102,7 +111,7 @@ namespace FerumServerWPF
         private void MenuItem_GetCurrentProcess(object sender, RoutedEventArgs e)
         {
             ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
-            MessageBox.Show(adapter.CurrentProcess, "Текущий процесс", MessageBoxButton.OK,MessageBoxImage.Information);
+            MessageBox.Show(adapter.CurrentProcess, "Текущий процесс", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void MenuItem_Disconect(object sender, RoutedEventArgs e)

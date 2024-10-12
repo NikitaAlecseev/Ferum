@@ -1,7 +1,6 @@
 ﻿using FerumServerWPF.Core;
 using FerumServerWPF.Core.Entity.RequestInformation;
 using FerumServerWPF.Core.Server;
-using MySqlX.XDevAPI;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

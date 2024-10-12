@@ -13,6 +13,8 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FerumSetupClient", "FerumSe
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FerumSetupServer", "FerumSetupServer\FerumSetupServer.vdproj", "{E60A8613-EADE-4CF7-96B2-A5806A1532B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpInstall", "HelpInstall\HelpInstall.csproj", "{6A6333A8-3F8E-4E83-8FCF-103814A3284A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,18 @@ Global
 		{E60A8613-EADE-4CF7-96B2-A5806A1532B1}.Release|Any CPU.ActiveCfg = Release
 		{E60A8613-EADE-4CF7-96B2-A5806A1532B1}.Release|arm64.ActiveCfg = Release
 		{E60A8613-EADE-4CF7-96B2-A5806A1532B1}.Release|x86.ActiveCfg = Release
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Debug|arm64.Build.0 = Debug|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Release|arm64.ActiveCfg = Release|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Release|arm64.Build.0 = Release|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A6333A8-3F8E-4E83-8FCF-103814A3284A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
