@@ -16,11 +16,10 @@ namespace FerumClient.Core
     public class ListenerCommand
     {
         private static TcpListener _tcpListenerRequest;
-        private static int _portRequest = 2001;
 
         public ListenerCommand()
         {
-            _tcpListenerRequest = new TcpListener(IPAddress.Any, _portRequest);
+            _tcpListenerRequest = new TcpListener(IPAddress.Any, Convert.ToInt32(GlobalVar.RequestPort));
             _tcpListenerRequest.Start();
 
             var thread = new Thread(TCPAcceptClient);

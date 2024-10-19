@@ -8,14 +8,27 @@
         mc:Ignorable="d"
         Title="Ferum" Height="720" Width="1080" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent" Loaded="Window_Loaded">
 
-    <Border x:Name="MainBorder" Background="#0D0E1A" CornerRadius="15" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+    <Border x:Name="MainBorder" Background="#0D0E1A"  CornerRadius="15" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Ferum (v1.0)" Foreground="White" FontSize="25" FontWeight="Bold" TextAlignment="Left" Margin="20 20 0 0"/>
+            <TextBlock Text="Ferum" FontFamily="Workes Regular" Foreground="White" FontSize="40" FontWeight="Bold" TextAlignment="Left" Margin="20 20 0 0"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Список клиентов" Foreground="White" FontSize="25" FontWeight="Bold" TextAlignment="Left" Margin="30 0 0 0" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+                <TextBlock Text="{Binding CountClients}" Foreground="#9C9C9C" FontSize="20" FontWeight="Normal"  TextAlignment="Right" Margin="0 0 30 0" Grid.Column="2" VerticalAlignment="Bottom"/>
+            </Grid>
+
             <!-- Start: Button Close | Restore | Minimize -->
             <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,30,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.RowSpan="2">
                 <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"/>
@@ -34,7 +47,7 @@
                 <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
             </StackPanel>
 
-            <ListView x:Name="listClients" Background="#0D0E1A" BorderBrush="Transparent" Grid.Row="1" Margin="30" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding ClientEntity, UpdateSourceTrigger=PropertyChanged}">
+            <ListView x:Name="listClients" Background="#0D0E1A" ItemContainerStyle="{StaticResource listViewCustom}" BorderBrush="Transparent" Grid.Row="2" Margin="30" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding ClientEntity, UpdateSourceTrigger=PropertyChanged}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Border Height="50" CornerRadius="10" Background="#030411" Margin="0 0 0 10">
@@ -53,9 +66,9 @@
                                     <Image Width="30" Height="30" Grid.Column="3"  Margin="20 0 0 0" Source="/Assets/Icons/ic_game.png" Visibility="{Binding Path=GameModeVisibleUI, UpdateSourceTrigger=PropertyChanged}"/>
                                     <Image Width="30" Height="30" Grid.Column="3"  Margin="20 0 0 0" Source="/Assets/Icons/ic_warning.png" Visibility="Collapsed"/>
                                 </StackPanel>
-                                
+
                                 <TextBlock Grid.Column="1" Text="{Binding Path=HostName}" VerticalAlignment="Center" Foreground="White" Grid.Row="2" TextAlignment="Left" Margin="10 0 0 0" FontSize="18"/>
-                                <TextBlock Grid.Column="2" Text="{Binding Path=VersionAgent}" VerticalAlignment="Center" Foreground="#393A47" FontSize="18" Grid.Row="3" TextAlignment="Center" Margin=" 10 0 0 0"/>
+                                <TextBlock Grid.ColumnSpan="5" Text="{Binding Path=VersionAgent}" VerticalAlignment="Center" Foreground="#393A47" FontSize="18" Grid.Row="3" TextAlignment="Center" Margin=" 10 0 0 0"/>
                             </Grid>
                         </Border>
                     </DataTemplate>
@@ -72,12 +85,12 @@
                         <MenuItem Header="Выключить" FontSize="18"/>
                         <MenuItem Header="Перезагрузить" FontSize="18"/>
                         <MenuItem Header="Заблокировать" FontSize="18"/>
-                        <Separator/>
-                        <MenuItem Header="Установить программы" FontSize="18"/>
-                        <MenuItem Header="Удалить программы" FontSize="18"/>
                     </ContextMenu>
                 </ListBox.ContextMenu>
             </ListView>
+
+
+            <TextBlock Text="v1.0" Foreground="#9C9C9C" Grid.Row="3" FontSize="20" FontWeight="Normal"  TextAlignment="Center" Margin="0 0 0 10" Grid.ColumnSpan="3" VerticalAlignment="Bottom"/>
         </Grid>
     </Border>
 </Window>

@@ -36,6 +36,8 @@ namespace FerumServerWPF.Core.ViewModels
                 else return Visibility.Collapsed;
             }
         }
+
+       
         public Visibility VisibleInformationPanel
         {
             get

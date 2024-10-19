@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -27,10 +28,20 @@ namespace FerumServerWPF.Core.ViewModels
             {
                 clientEntity = value;
                 OnPropertyChanged("ClientEntity");
+                OnPropertyChanged("CountClients");
+            }
+        }
+
+        public string CountClients
+        {
+            get
+            {
+                return $"Количество: {ClientEntity.Count}";
             }
         }
 
         private ServerListener serverListener = new ServerListener();
+
 
         public MainWindowVM()
         {

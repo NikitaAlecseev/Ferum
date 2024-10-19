@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "E:\\GitRepository\\Ferum\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|e:\\gitrepository\\ferum\\ferumclient\\core\\rdp\\rdpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|solutionrelative:ferumclient\\core\\rdp\\rdpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\server\\serverlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\server\\serverlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|E:\\GitRepository\\Ferum\\ferumclient\\core\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|solutionrelative:ferumclient\\core\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RDPClient.cs",
+              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\RDP\\RDPClient.cs",
+              "RelativeDocumentMoniker": "FerumClient\\Core\\RDP\\RDPClient.cs",
+              "ToolTip": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\RDP\\RDPClient.cs",
+              "RelativeToolTip": "FerumClient\\Core\\RDP\\RDPClient.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T20:25:59.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ServerListener.cs",
               "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Server\\ServerListener.cs",
               "RelativeDocumentMoniker": "FerumServerWPF\\Core\\Server\\ServerListener.cs",
               "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Server\\ServerListener.cs",
               "RelativeToolTip": "FerumServerWPF\\Core\\Server\\ServerListener.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAB0AAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAEcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T16:03:01.486Z",
+              "WhenOpened": "2024-10-17T20:09:53.943Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Commands.cs",
+              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\Commands.cs",
+              "RelativeDocumentMoniker": "FerumClient\\Core\\Commands.cs",
+              "ToolTip": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\Commands.cs",
+              "RelativeToolTip": "FerumClient\\Core\\Commands.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T20:08:49.588Z"
             }
           ]
         }

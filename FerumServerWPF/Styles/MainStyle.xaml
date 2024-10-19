@@ -142,7 +142,7 @@
 
 
     <!-- Menu item listView-->
-    <Style TargetType="{x:Type ListViewItem}">
+    <Style TargetType="{x:Type ListViewItem}" x:Key="listViewCustom">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Template">
             <Setter.Value>
