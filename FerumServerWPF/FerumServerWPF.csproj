@@ -153,11 +153,6 @@
     <Compile Include="Core\CryptoRSA.cs" />
     <Compile Include="Core\DB\CommandDB.cs" />
     <Compile Include="Core\DB\DB.cs" />
-    <Compile Include="Core\Entity\Client\AnswerEntity.cs" />
-    <Compile Include="Core\Entity\Information\HardInfo.cs" />
-    <Compile Include="Core\Entity\Information\NetworkEntity.cs" />
-    <Compile Include="Core\Entity\RDPConnectEntity.cs" />
-    <Compile Include="Core\Entity\RequestInformation\InstalledProgram.cs" />
     <Compile Include="Core\EventSystem.cs" />
     <Compile Include="Core\GlobalVar.cs" />
     <Compile Include="Core\PageNavigationController.cs" />
@@ -170,12 +165,7 @@
     <Compile Include="Core\ViewModels\PageInformation\DiskVM.cs" />
     <Compile Include="Core\ViewModels\PageInformation\MainVM.cs" />
     <Compile Include="Core\ViewModels\MainWindowVM.cs" />
-    <Compile Include="Core\Entity\Client\Command.cs" />
-    <Compile Include="Core\Entity\Information\MainInformationEntity.cs" />
     <Compile Include="Core\Entity\MenuItemInfo.cs" />
-    <Compile Include="Core\Entity\Information\RandomAccessMemory.cs" />
-    <Compile Include="Core\Entity\Information\UsersEntity.cs" />
-    <Compile Include="Core\Entity\Information\VideoCardEntity.cs" />
     <Compile Include="Core\ViewModels\PageInformation\MonitorVM.cs" />
     <Compile Include="Core\ViewModels\PageInformation\NetworkVM.cs" />
     <Compile Include="Core\ViewModels\PageInformation\PowerShellVM.cs" />
@@ -220,7 +210,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Entity\Information\ClientEntity.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -375,6 +364,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FerumEntities\FerumEntities.csproj">
+      <Project>{6B6F31D8-5524-4CC3-843F-69A10FE15F85}</Project>
+      <Name>FerumEntities</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\Nikit\Desktop\remotedesktopterminalservice-master\Rdp.Terminal.Core\Rdp.Terminal.Core.csproj">
       <Project>{e989bd6a-29a2-42f0-b21f-0e94befc9f70}</Project>
       <Name>Rdp.Terminal.Core</Name>

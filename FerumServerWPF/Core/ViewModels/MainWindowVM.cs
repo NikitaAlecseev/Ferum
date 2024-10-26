@@ -1,20 +1,10 @@
-﻿using FerumServerWPF.Core.Adapter;
+﻿using FerumEntities.Information;
+using FerumServerWPF.Core.Adapter;
 using FerumServerWPF.Core.DB;
 using FerumServerWPF.Core.Server;
-using FerumServerWPF.Entity;
-using Microsoft.Win32;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
-using static FerumServerWPF.Core.EventSystem;
 
 namespace FerumServerWPF.Core.ViewModels
 {

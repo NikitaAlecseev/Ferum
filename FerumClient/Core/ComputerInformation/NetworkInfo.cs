@@ -1,13 +1,9 @@
-﻿using FerumClient.Core.Entity.Information;
-using FerumClient.Core.Helper;
-using System;
+﻿using FerumClient.Core.Helper;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+using FerumEntities.Information;
 
 namespace FerumClient.Core.ComputerInformation
 {

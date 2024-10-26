@@ -1,11 +1,7 @@
-﻿using FerumServerWPF.Core.DB;
-using FerumServerWPF.Entity;
-using FerumServerWPF.Entity.Client;
+﻿using FerumEntities.Information;
+using FerumServerWPF.Core.DB;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Threading;
@@ -96,10 +92,17 @@ namespace FerumServerWPF.Core.Adapter
             else
             {
                 ColorIndicator = "#D71919"; // красный
+                GameModeVisibleUI = Visibility.Collapsed;
             }
         }
         public void UpdateGameStatus()
         {
+            if (colorIndicator == "#d7b919") // если клиент пока не определен (в сети)
+            {
+                GameModeVisibleUI = Visibility.Collapsed;
+                return;
+            }
+
             CommandDB command = new CommandDB();
             string[] words = Regex.Split(CurrentProcess, @"[\s.,!?;:-]");
 

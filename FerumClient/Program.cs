@@ -1,7 +1,6 @@
 ﻿using FerumClient.Core;
 using FerumClient.Core.ComputerInformation;
-using FerumClient.Core.Entity.Information;
-using FerumClient.Entity;
+using FerumEntities.Information;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 using System;
@@ -74,7 +73,7 @@ namespace FerumClient
                 List<HardInfo> hardDisks = Computer.GetHardDisks();
 
                 // Создание объекта с информацией о хосте
-                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard, modelProcessorModel, videoCards, usersInfo, randomAccessMemories, hardDisks, currentProcess, networkEntities, "v1.0");
+                MainInformationEntity hostObj = new MainInformationEntity(hostInfo, lastTimeRestart, modelMotherboard, modelProcessorModel, videoCards, usersInfo, randomAccessMemories, hardDisks, currentProcess, networkEntities, "v1.5");
 
                 // Сериализация информации о хосте в формат JSON
                 string jsonString = JsonConvert.SerializeObject(hostObj);
@@ -105,6 +104,8 @@ namespace FerumClient
                     GlobalVar.RequestPort = key.GetValue("RequestPort") as string;
                 }
             }
+
+            GlobalVar.HostName = Computer.GetHostInfo();
         }
 
         private static void MainInstall(string[] args)

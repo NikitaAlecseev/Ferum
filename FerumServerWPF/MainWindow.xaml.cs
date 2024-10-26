@@ -125,5 +125,29 @@ namespace FerumServerWPF
             WindowRDP windowRDP = new WindowRDP(adapter.HostName);
             windowRDP.Show();
         }
+        private void MenuItem_Shutdown(object sender, RoutedEventArgs e)
+        {
+            ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
+            if(MessageBox.Show($"Вы уверены, что хотите выключить {adapter.HostName}?","Внимание", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                ServerSendCommand.Send(adapter.HostName, "Shutdown");
+            }
+        }
+        private void MenuItem_Restart(object sender, RoutedEventArgs e)
+        {
+            ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
+            if (MessageBox.Show($"Вы уверены, что хотите перезагрузить {adapter.HostName}?", "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                ServerSendCommand.Send(adapter.HostName, "Restart");
+            }
+        }
+        private void MenuItem_Lock(object sender, RoutedEventArgs e)
+        {
+            ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
+            if (MessageBox.Show($"Вы уверены, что хотите заблокировать {adapter.HostName}?", "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                ServerSendCommand.Send(adapter.HostName, "Lock");
+            }
+        }
     }
 }

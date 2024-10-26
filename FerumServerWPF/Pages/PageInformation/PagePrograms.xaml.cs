@@ -1,22 +1,12 @@
-﻿using FerumServerWPF.Core;
-using FerumServerWPF.Core.Entity.RequestInformation;
+﻿using FerumEntities.RequestInformation;
+using FerumServerWPF.Core;
 using FerumServerWPF.Core.Server;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace FerumServerWPF.Pages.PageInformation
 {
@@ -51,22 +41,26 @@ namespace FerumServerWPF.Pages.PageInformation
         {
             try
             {
-                List<InstalledProgram> programs = JsonConvert.DeserializeObject<List<InstalledProgram>>(json);
-                List<string> result = new List<string>();
-                for (int i = 0; i < programs.Count; i++)
+                AnswerEntity answer = JsonConvert.DeserializeObject<AnswerEntity>(json);
+
+                if(answer.HostName == hostName && answer.AnswerType == AnswerEntity.TypeAnswers.Programs) // если пришел правильный ответ от клиента
                 {
-                    result.Add(programs[i].Name);
+                    List<InstalledProgram> programs = JsonConvert.DeserializeObject<List<InstalledProgram>>(answer.Json);
+                    List<string> result = new List<string>();
+                    for (int i = 0; i < programs.Count; i++)
+                    {
+                        result.Add(programs[i].Name);
+                    }
+
+
+                    Application.Current.Dispatcher.Invoke(new Action(() =>
+                    {
+                        listViewPrograms.ItemsSource = result;
+
+                        loaderAnimUI.Visibility = Visibility.Collapsed;
+                        listViewPrograms.Visibility = Visibility.Visible;
+                    }));
                 }
-
-
-                Application.Current.Dispatcher.Invoke(new Action(() =>
-                {
-                    listViewPrograms.ItemsSource = result;
-
-                    loaderAnimUI.Visibility = Visibility.Collapsed;
-                    listViewPrograms.Visibility = Visibility.Visible;
-                }));
-
             }
             catch (Exception ex)
             {

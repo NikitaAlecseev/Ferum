@@ -69,6 +69,7 @@ namespace FerumServerWPF.Core.Server
 
                 try
                 {
+                    
                     EventSystem.InvokeEventGetClient(jsonString);
                 }
                 catch (Exception ex)

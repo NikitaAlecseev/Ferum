@@ -1,6 +1,5 @@
-﻿using FerumClient.Core.Entity.Information;
-using FerumClient.Core.Entity.RequestInformation;
-using FerumClient.Entity;
+﻿using FerumEntities.Information;
+using FerumEntities.RequestInformation;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;

@@ -82,15 +82,15 @@
                         <MenuItem Header="Изменения в характеристиках" FontSize="18" IsEnabled="False"/>
                         <MenuItem Header="Отключить" FontSize="18" Click="MenuItem_Disconect"/>
                         <Separator/>
-                        <MenuItem Header="Выключить" FontSize="18"/>
-                        <MenuItem Header="Перезагрузить" FontSize="18"/>
-                        <MenuItem Header="Заблокировать" FontSize="18"/>
+                        <MenuItem Header="Выключить" FontSize="18" Click="MenuItem_Shutdown"/>
+                        <MenuItem Header="Перезагрузить" FontSize="18" Click="MenuItem_Restart"/>
+                        <MenuItem Header="Заблокировать" FontSize="18" Click="MenuItem_Lock"/>
                     </ContextMenu>
                 </ListBox.ContextMenu>
             </ListView>
 
 
-            <TextBlock Text="v1.0" Foreground="#9C9C9C" Grid.Row="3" FontSize="20" FontWeight="Normal"  TextAlignment="Center" Margin="0 0 0 10" Grid.ColumnSpan="3" VerticalAlignment="Bottom"/>
+            <TextBlock Text="v1.5" Foreground="#9C9C9C" Grid.Row="3" FontSize="20" FontWeight="Normal"  TextAlignment="Center" Margin="0 0 0 10" Grid.ColumnSpan="3" VerticalAlignment="Bottom"/>
         </Grid>
     </Border>
 </Window>

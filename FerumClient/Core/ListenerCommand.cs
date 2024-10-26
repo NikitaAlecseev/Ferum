@@ -1,15 +1,11 @@
-﻿using FerumClient.Core.Entity.Client;
-using FerumClient.Entity;
+﻿using FerumClient.Core.Helper;
+using FerumEntities.Client;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace FerumClient.Core
 {
@@ -51,7 +47,9 @@ namespace FerumClient.Core
 
                 try
                 {
+                    
                     Command hostInfoObj = JsonConvert.DeserializeObject<Command>(jsonString);
+                    ErrorLog.ScreenError("Получил команду: " + hostInfoObj.command);
                     Commands.Send(hostInfoObj.command,hostInfoObj.parametr);
                 }
                 catch (Exception ex)

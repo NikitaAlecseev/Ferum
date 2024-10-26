@@ -1,14 +1,9 @@
-﻿using FerumClient.Core.Entity;
+﻿using FerumEntities;
+using FerumEntities.RequestInformation;
 using Newtonsoft.Json;
-using Rdp.Terminal.Core.Client.Models;
 using Rdp.Terminal.Core.Server;
 using Rdp.Terminal.Core.WinApi;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace FerumClient.Core
 {
@@ -73,7 +68,10 @@ namespace FerumClient.Core
             RDPConnectEntity rdpConnectEntity = new RDPConnectEntity();
             rdpConnectEntity.ServerConnectionText = ServerConnectionText;
             string jsonConnect = JsonConvert.SerializeObject(rdpConnectEntity);
-            SendHostInfo.SendHostRequest(jsonConnect);
+
+            AnswerEntity answer = new AnswerEntity(GlobalVar.HostName, jsonConnect, AnswerEntity.TypeAnswers.RDP);
+            string json = JsonConvert.SerializeObject(answer);
+            SendHostInfo.SendHostRequest(json);
         }
 
         public void Disconnect()

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\GitRepository\\Ferum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|e:\\gitrepository\\ferum\\ferumclient\\core\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|solutionrelative:ferumclient\\core\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\adapter\\clientadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\adapter\\clientadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Commands.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\Commands.cs",
-              "RelativeDocumentMoniker": "FerumClient\\Core\\Commands.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\Commands.cs",
-              "RelativeToolTip": "FerumClient\\Core\\Commands.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAADUAAAA1AAAAAAAAAA==",
+              "Title": "ClientAdapter.cs",
+              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
+              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
+              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
+              "RelativeToolTip": "FerumServerWPF\\Core\\Adapter\\ClientAdapter.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T14:09:06.406Z",
+              "WhenOpened": "2024-10-26T21:40:47.064Z",
               "EditorCaption": ""
             }
           ]

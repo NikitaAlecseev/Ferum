@@ -1,7 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows;
-using FerumServerWPF.Core.Entity;
+using FerumEntities;
+using FerumEntities.RequestInformation;
 using FerumServerWPF.Core.RDP;
 using FerumServerWPF.Core.Server;
 using Newtonsoft.Json;
@@ -61,11 +62,16 @@ namespace FerumServerWPF.Core.ViewModels
 
         private void getConnectionString(string json)
         {
-            RDPConnectEntity rdpConnect = JsonConvert.DeserializeObject<RDPConnectEntity>(json);
-            ServerConnectionText = rdpConnect.ServerConnectionText;
-            ConnectionText = rdpConnect.ServerConnectionText;
+            AnswerEntity answer = JsonConvert.DeserializeObject<AnswerEntity>(json);
 
-            Connect(null);
+            if(answer.HostName == Host && answer.AnswerType == AnswerEntity.TypeAnswers.RDP)
+            {
+                RDPConnectEntity rdpConnect = JsonConvert.DeserializeObject<RDPConnectEntity>(answer.Json);
+                ServerConnectionText = rdpConnect.ServerConnectionText;
+                ConnectionText = rdpConnect.ServerConnectionText;
+
+                Connect(null);
+            }
         }
 
         /// <summary>

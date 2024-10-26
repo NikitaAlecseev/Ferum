@@ -1,12 +1,6 @@
-﻿using FerumServerWPF.Core.DB;
-using FerumServerWPF.Entity;
+﻿using FerumEntities.Information;
+using FerumServerWPF.Core.DB;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace FerumServerWPF.Core.Server
 {

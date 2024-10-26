@@ -1,0 +1,6 @@
+E:\GitRepository\Ferum\FerumEntities\obj\Debug\FerumEntities.csproj.AssemblyReference.cache
+E:\GitRepository\Ferum\FerumEntities\obj\Debug\FerumEntities.csproj.CoreCompileInputs.cache
+E:\GitRepository\Ferum\FerumEntities\bin\Debug\FerumEntities.dll
+E:\GitRepository\Ferum\FerumEntities\bin\Debug\FerumEntities.pdb
+E:\GitRepository\Ferum\FerumEntities\obj\Debug\FerumEntities.dll
+E:\GitRepository\Ferum\FerumEntities\obj\Debug\FerumEntities.pdb

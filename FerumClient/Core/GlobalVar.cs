@@ -8,6 +8,7 @@ namespace FerumClient.Core
 {
     public class GlobalVar
     {
+        public static string HostName;
         public static string IPServer;
         public static string MainPort;
         public static string RequestPort;
