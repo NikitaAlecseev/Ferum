@@ -1,4 +1,5 @@
-﻿using FerumServerWPF.Core.ViewModels;
+﻿using FerumServerWPF.Core.Server;
+using FerumServerWPF.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,8 @@ namespace FerumServerWPF
             viewModel = new WindowRDPViewModel(_host);
             DataContext = viewModel;
             InitializeComponent();
+
+            ServerSendCommand.Send(_host, "RDP");
         }
 
         private void Window_Closed(object sender, EventArgs e)

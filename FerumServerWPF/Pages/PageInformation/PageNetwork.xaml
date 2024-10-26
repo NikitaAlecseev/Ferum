@@ -17,7 +17,7 @@
             </Grid.RowDefinitions>
             <TextBlock Text="Сетевые адаптеры" TextAlignment="Left" Margin="20 0 0 0" VerticalAlignment="Center" Foreground="White" FontSize="30" FontWeight="Bold"/>
 
-            <TreeView x:Name="treeView1" Margin="10,10,0,13" Background="#0D0E1A" BorderBrush="Transparent" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TreeView x:Name="treeView1" Margin="10,10,0,13" Width="850" Background="#0D0E1A" BorderBrush="Transparent" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
 
             </TreeView>
         </Grid>

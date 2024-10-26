@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\GitRepository\\Ferum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\core\\server\\serverlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\core\\server\\serverlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|E:\\GitRepository\\Ferum\\ferumclient\\core\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B4FC918-5A03-419F-B865-3DDA4004AB4B}|FerumClient\\FerumClient.csproj|solutionrelative:ferumclient\\core\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|e:\\gitrepository\\ferum\\ferumserverwpf\\pages\\pageinformation\\pagenetwork.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3B9E4568-67C3-4217-A8DB-C98DD7C37439}|FerumServerWPF\\FerumServerWPF.csproj|solutionrelative:ferumserverwpf\\pages\\pageinformation\\pagenetwork.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ServerListener.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Server\\ServerListener.cs",
-              "RelativeDocumentMoniker": "FerumServerWPF\\Core\\Server\\ServerListener.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Core\\Server\\ServerListener.cs",
-              "RelativeToolTip": "FerumServerWPF\\Core\\Server\\ServerListener.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAEgAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T20:09:53.943Z",
+              "Title": "PageNetwork.xaml",
+              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Pages\\PageInformation\\PageNetwork.xaml",
+              "RelativeDocumentMoniker": "FerumServerWPF\\Pages\\PageInformation\\PageNetwork.xaml",
+              "ToolTip": "E:\\GitRepository\\Ferum\\FerumServerWPF\\Pages\\PageInformation\\PageNetwork.xaml",
+              "RelativeToolTip": "FerumServerWPF\\Pages\\PageInformation\\PageNetwork.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-22T20:32:57.529Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Commands.cs",
-              "DocumentMoniker": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\Commands.cs",
-              "RelativeDocumentMoniker": "FerumClient\\Core\\Commands.cs",
-              "ToolTip": "E:\\GitRepository\\Ferum\\FerumClient\\Core\\Commands.cs",
-              "RelativeToolTip": "FerumClient\\Core\\Commands.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T20:08:49.588Z"
             }
           ]
         }

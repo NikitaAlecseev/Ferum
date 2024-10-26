@@ -125,7 +125,6 @@ namespace FerumServerWPF
             ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
             WindowRDP windowRDP = new WindowRDP(adapter.HostName);
             windowRDP.Show();
-            ServerSendCommand.Send(adapter.HostName, "RDP");
         }
     }
 }

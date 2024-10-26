@@ -68,6 +68,7 @@ namespace FerumServerWPF.Core.ViewModels
                     ClientAdapter newClient = new ClientAdapter(clientInfo.HostName, DateTime.Now, clientInfo.CurrentProcess, clientInfo.VersionAgent);
                     newClient.UpdateIndicatorColor(null, null);
                     ClientEntity.Add(newClient);
+                    OnPropertyChanged("CountClients");
                 }
 
             });

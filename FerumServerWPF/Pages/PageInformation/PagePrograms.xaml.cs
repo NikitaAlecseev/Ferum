@@ -43,24 +43,34 @@ namespace FerumServerWPF.Pages.PageInformation
             EventSystem.EventGetAnswerClient += getAnswerClient;
         }
 
+
+
         private void getAnswerClient(string json)
         {
-            List<InstalledProgram> programs = JsonConvert.DeserializeObject<List<InstalledProgram>>(json);
-            List<string> result = new List<string>();
-            for (int i = 0; i < programs.Count; i++)
+            try
             {
-                result.Add(programs[i].Name);
+                List<InstalledProgram> programs = JsonConvert.DeserializeObject<List<InstalledProgram>>(json);
+                List<string> result = new List<string>();
+                for (int i = 0; i < programs.Count; i++)
+                {
+                    result.Add(programs[i].Name);
+                }
+
+
+                Application.Current.Dispatcher.Invoke(new Action(() =>
+                {
+                    listViewPrograms.ItemsSource = result;
+
+                    loaderAnimUI.Visibility = Visibility.Collapsed;
+                    listViewPrograms.Visibility = Visibility.Visible;
+                }));
+
             }
-
-
-            Application.Current.Dispatcher.Invoke(new Action(() =>
+            catch (Exception ex)
             {
-                listViewPrograms.ItemsSource = result;
 
-                loaderAnimUI.Visibility = Visibility.Collapsed;
-                listViewPrograms.Visibility = Visibility.Visible;
-            }));
-
+            }
+           
         }
     }
 }
