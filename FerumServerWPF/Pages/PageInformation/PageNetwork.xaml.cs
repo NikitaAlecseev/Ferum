@@ -21,11 +21,12 @@ namespace FerumServerWPF.Pages.PageInformation
     /// </summary>
     public partial class PageNetwork : Page
     {
-        private MainInformationVM viewModel = new MainInformationVM();
+        private MainVM viewModel;
 
-        public PageNetwork()
+        public PageNetwork(string _host)
         {
             InitializeComponent();
+            viewModel = new MainVM(_host);
             DataContext = viewModel;
         }
 

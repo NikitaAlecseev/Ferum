@@ -102,9 +102,8 @@ namespace FerumServerWPF
         private void MenuItem_Open(object sender, RoutedEventArgs e)
         {
             ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
-            GlobalVar.SelectHostName = adapter.HostName;
 
-            WindowView windView = new WindowView("k1-333-10"); // TODO: сделать по нормальному
+            WindowView windView = new WindowView(adapter.HostName); // TODO: сделать по нормальному
             windView.Show();
         }
 

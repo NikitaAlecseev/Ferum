@@ -13,7 +13,5 @@ namespace FerumServerWPF.Core
         public static string PasswordSQL;
         public static string MainPort;
         public static string RequestPort;
-
-        public static string SelectHostName = ""; // TODO: удалить эту хуйню и сделать по нормальному
     }
 }

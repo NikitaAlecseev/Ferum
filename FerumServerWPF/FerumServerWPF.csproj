@@ -153,19 +153,22 @@
     <Compile Include="Core\CryptoRSA.cs" />
     <Compile Include="Core\DB\CommandDB.cs" />
     <Compile Include="Core\DB\DB.cs" />
+    <Compile Include="Core\Entity\Client\AnswerEntity.cs" />
     <Compile Include="Core\Entity\Information\HardInfo.cs" />
     <Compile Include="Core\Entity\Information\NetworkEntity.cs" />
     <Compile Include="Core\Entity\RDPConnectEntity.cs" />
     <Compile Include="Core\Entity\RequestInformation\InstalledProgram.cs" />
     <Compile Include="Core\EventSystem.cs" />
     <Compile Include="Core\GlobalVar.cs" />
+    <Compile Include="Core\PageNavigationController.cs" />
     <Compile Include="Core\RDP\DelegateCommand.cs" />
     <Compile Include="Core\RDP\NotificationObject.cs" />
     <Compile Include="Core\RDP\PropertySupport.cs" />
     <Compile Include="Core\Server\DBServer.cs" />
     <Compile Include="Core\Server\ServerListener.cs" />
     <Compile Include="Core\Server\ServerSendCommand.cs" />
-    <Compile Include="Core\ViewModels\MainInformationVM.cs" />
+    <Compile Include="Core\ViewModels\PageInformation\DiskVM.cs" />
+    <Compile Include="Core\ViewModels\PageInformation\MainVM.cs" />
     <Compile Include="Core\ViewModels\MainWindowVM.cs" />
     <Compile Include="Core\Entity\Client\Command.cs" />
     <Compile Include="Core\Entity\Information\MainInformationEntity.cs" />
@@ -173,6 +176,11 @@
     <Compile Include="Core\Entity\Information\RandomAccessMemory.cs" />
     <Compile Include="Core\Entity\Information\UsersEntity.cs" />
     <Compile Include="Core\Entity\Information\VideoCardEntity.cs" />
+    <Compile Include="Core\ViewModels\PageInformation\MonitorVM.cs" />
+    <Compile Include="Core\ViewModels\PageInformation\NetworkVM.cs" />
+    <Compile Include="Core\ViewModels\PageInformation\PowerShellVM.cs" />
+    <Compile Include="Core\ViewModels\PageInformation\ProgramsVM.cs" />
+    <Compile Include="Core\ViewModels\PageInformation\TaskVM.cs" />
     <Compile Include="Core\ViewModels\WindowRDPViewModel.cs" />
     <Compile Include="Pages\PageInformation\PageDisk.xaml.cs">
       <DependentUpon>PageDisk.xaml</DependentUpon>

@@ -1,4 +1,6 @@
-﻿using FerumServerWPF.Entity;
+﻿using FerumServerWPF.Core;
+using FerumServerWPF.Entity;
+using FerumServerWPF.Pages.PageInformation;
 using System;
 using System.Collections.Generic;
 using System.Windows;
@@ -14,10 +16,12 @@ namespace FerumServerWPF
     {
         private bool IsMaximized = false;
         private string hostName;
+        private PageNavigationController pageController;
         public WindowView(string _hostName)
         {
             InitializeComponent();
             hostName = _hostName;
+            pageController = new PageNavigationController(fContainer);
         }
         private void WindowView_Loaded(object sender, RoutedEventArgs e)
         {
@@ -86,35 +90,7 @@ namespace FerumServerWPF
         private void listMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             MenuItemInfo itemMenu = listMenu.SelectedItem as MenuItemInfo;
-            loadPage(itemMenu.Name);
-        }
-
-        private void loadPage(string _name)
-        {
-            switch (_name)
-            {
-                case "Основная":
-                    fContainer.Navigate(new System.Uri("Pages/PageInformation/PageMainInformation.xaml", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Мониторы":
-                    fContainer.Navigate(new System.Uri("Pages/PageInformation/PageMonitor.xaml", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Диски":
-                    fContainer.Navigate(new System.Uri("Pages/PageInformation/PageDisk.xaml", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Сеть":
-                    fContainer.Navigate(new System.Uri("Pages/PageInformation/PageNetwork.xaml", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Программы":
-                    fContainer.Navigate(new System.Uri("Pages/PageInformation/PagePrograms.xaml", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Дисп.задач":
-                    fContainer.Navigate(new System.Uri("Pages/PageInformation/PageTasks.xaml", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Сценарии":
-                    fContainer.Navigate(new System.Uri("Pages/PageInformation/PagePowershell.xaml", UriKind.RelativeOrAbsolute));
-                    break;
-            }
+            pageController.Navigate(itemMenu.Name, hostName);
         }
     }
 }

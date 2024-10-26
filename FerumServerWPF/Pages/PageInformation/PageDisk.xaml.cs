@@ -21,10 +21,11 @@ namespace FerumServerWPF.Pages.PageInformation
     /// </summary>
     public partial class PageDisk : Page
     {
-        private MainInformationVM viewModel = new MainInformationVM();
-        public PageDisk()
+        private MainVM viewModel;
+        public PageDisk(string _host)
         {
             InitializeComponent();
+            viewModel = new MainVM(_host);
             DataContext = viewModel;
         }
 

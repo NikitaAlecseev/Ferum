@@ -14,7 +14,7 @@ using FerumServerWPF.Core.DB;
 
 namespace FerumServerWPF.Core.ViewModels
 {
-    public class MainInformationVM : INotifyPropertyChanged
+    public class MainVM : INotifyPropertyChanged
     {
         private MainInformationEntity infoEntity;
         public MainInformationEntity InfoEntity
@@ -48,15 +48,15 @@ namespace FerumServerWPF.Core.ViewModels
         }
 
 
-        public MainInformationVM()
+        public MainVM(string _host)
         {
-            loadData();    
+            loadData(_host);    
         }
 
-        private void loadData()
+        private void loadData(string _host)
         {
             CommandDB command = new CommandDB();
-            command.LoadData($"Select Information From Clients Where Hostname = '{GlobalVar.SelectHostName}'");
+            command.LoadData($"Select Information From Clients Where Hostname = '{_host}'");
             string jsonString = command.MainTable.Rows[0][0].ToString();
             InfoEntity = JsonConvert.DeserializeObject<MainInformationEntity>(jsonString);
         }

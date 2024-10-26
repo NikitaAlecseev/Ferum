@@ -25,9 +25,11 @@ namespace FerumServerWPF.Pages.PageInformation
     /// </summary>
     public partial class PagePrograms : Page
     {
-        public PagePrograms()
+        private string hostName;
+        public PagePrograms(string _hostName)
         {
             InitializeComponent();
+            hostName = _hostName;
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -37,10 +39,10 @@ namespace FerumServerWPF.Pages.PageInformation
 
         private void loadData()
         {
-            var thread = new Thread(()=> ServerSendCommand.Send(GlobalVar.SelectHostName, "Get Programs", ""));
+            var thread = new Thread(()=> ServerSendCommand.Send(hostName, "Get Programs", ""));
             thread.Start();
             
-            EventSystem.EventGetAnswerClient += getAnswerClient;
+            EventSystem.EventGetAnswerClient += getAnswerClient; // TODO: сделать асинхронный метод с ожиданием ответа от клиента
         }
 
 

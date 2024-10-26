@@ -23,11 +23,11 @@ namespace FerumServerWPF.Pages.PageInformation
     /// </summary>
     public partial class PageMainInformation : Page
     {
-        private MainInformationVM viewModel = new MainInformationVM();
-        public PageMainInformation()
+        private MainVM viewModel;
+        public PageMainInformation(string _host)
         {
             InitializeComponent();
-
+            viewModel = new MainVM(_host);
             DataContext = viewModel;
         }
 

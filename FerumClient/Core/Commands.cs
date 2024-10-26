@@ -1,4 +1,5 @@
 ﻿using FerumClient.Core.ComputerInformation;
+using FerumClient.Core.Entity.Client;
 using FerumClient.Core.Entity.RequestInformation;
 using FerumClient.Entity;
 using Newtonsoft.Json;

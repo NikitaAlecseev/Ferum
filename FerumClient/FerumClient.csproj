@@ -64,6 +64,8 @@
     <Compile Include="Core\Commands.cs" />
     <Compile Include="Core\ComputerInformation\Computer.cs" />
     <Compile Include="Core\ComputerInformation\NetworkInfo.cs" />
+    <Compile Include="Core\Entity\Client\AnswerEntity.cs" />
+    <Compile Include="Core\Entity\Client\TypeAnswer.cs" />
     <Compile Include="Core\Entity\RDPConnectEntity.cs" />
     <Compile Include="Core\GlobalVar.cs" />
     <Compile Include="Core\RDP\DelegateCommand.cs" />
