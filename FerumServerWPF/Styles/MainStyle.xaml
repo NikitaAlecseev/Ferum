@@ -88,6 +88,32 @@
     </Style>
 
 
+    <!-- Developer Button -->
+    <Style x:Key="ButtonDeveloper" TargetType="Button">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="border" 
+                        BorderThickness="1"
+                        Padding="4,2" 
+                        BorderBrush="Transparent" 
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="Transparent" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
     <!-- Background Colors -->
     <SolidColorBrush x:Key="PrimaryBackgroundColor" Color="#131725"/>
     <SolidColorBrush x:Key="SecundaryBackgroundColor" Color="#1d2335"/>

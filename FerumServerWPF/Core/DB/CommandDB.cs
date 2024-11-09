@@ -1,7 +1,10 @@
-﻿using System;
+﻿using FerumEntities.Client;
+using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity.Infrastructure;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,16 +28,8 @@ namespace FerumServerWPF.Core.DB
 
             try
             {
-                SqlCommand newCommand = new SqlCommand(_command, getConnection()); // объявляем команду
-
-                dataSet = new DataSet();
-
-                sqlDataAdapter = new SqlDataAdapter();
-
-                sqlDataAdapter.SelectCommand = newCommand; // присваиваем адаптеру команду
-                sqlDataAdapter.Fill(dataSet, "Load"); // заполняем dataSet данными из БД
-
-                MainTable = dataSet.Tables["Load"]; // присваиваем таблице данные из dataSet
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(_command, getConnection());
+                adapter.Fill(MainTable);
 
             }
             catch (Exception ex)
@@ -50,7 +45,8 @@ namespace FerumServerWPF.Core.DB
             openConnection(); // открываем подключение
             try
             {
-                SqlCommand Scommand = new SqlCommand(_command, getConnection()); // объявляем команду
+                SQLiteCommand Scommand = new SQLiteCommand(_command, getConnection()); // объявляем команду
+                Scommand.CommandType = CommandType.Text;
                 Scommand.ExecuteNonQuery(); // отправляем команду в БД
             }
             catch (Exception ex)

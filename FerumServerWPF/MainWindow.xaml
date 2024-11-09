@@ -91,6 +91,11 @@
 
 
             <TextBlock Text="v1.5" Foreground="#9C9C9C" Grid.Row="3" FontSize="20" FontWeight="Normal"  TextAlignment="Center" Margin="0 0 0 10" Grid.ColumnSpan="3" VerticalAlignment="Bottom"/>
+
+            <Button x:Name="btnDeveloper" Style="{StaticResource ButtonDeveloper}" Background="Transparent" Grid.Row="3" HorizontalAlignment="Left" Margin="10 0 0 0" BorderBrush="Transparent" Click="btnDeveloper_Click">
+                <TextBlock Text="@PineDeveloper" Foreground="#9C9C9C"  FontSize="20" FontWeight="Normal"  TextAlignment="Left" Grid.ColumnSpan="3" VerticalAlignment="Bottom"/>
+            </Button>
+            
         </Grid>
     </Border>
 </Window>

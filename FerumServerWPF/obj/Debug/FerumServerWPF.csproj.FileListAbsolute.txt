@@ -469,3 +469,11 @@ E:\GitRepository\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.exe
 E:\GitRepository\Ferum\FerumServerWPF\obj\Debug\FerumServerWPF.pdb
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\FerumEntities.dll
 E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\FerumEntities.pdb
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\EntityFramework.dll
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\System.Data.SQLite.dll
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\System.Data.SQLite.EF6.dll
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\System.Data.SQLite.Linq.dll
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\EntityFramework.xml
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitRepository\Ferum\FerumServerWPF\bin\Debug\System.Data.SQLite.xml

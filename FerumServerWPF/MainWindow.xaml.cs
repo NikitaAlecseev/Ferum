@@ -1,27 +1,9 @@
-﻿using FerumServerWPF.Core;
-using FerumServerWPF.Core.Adapter;
-using FerumServerWPF.Core.DB;
+﻿using FerumServerWPF.Core.Adapter;
 using FerumServerWPF.Core.Server;
 using FerumServerWPF.Core.ViewModels;
-using FerumServerWPF.Entity;
-using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace FerumServerWPF
 {
@@ -103,7 +85,7 @@ namespace FerumServerWPF
         {
             ClientAdapter adapter = listClients.SelectedItem as ClientAdapter;
 
-            WindowView windView = new WindowView(adapter.HostName); // TODO: сделать по нормальному
+            WindowView windView = new WindowView(adapter.HostName);
             windView.Show();
         }
 
@@ -148,6 +130,12 @@ namespace FerumServerWPF
             {
                 ServerSendCommand.Send(adapter.HostName, "Lock");
             }
+        }
+
+        private void btnDeveloper_Click(object sender, RoutedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://vk.com/nikitaalecseev");
+            Process.Start(sInfo);
         }
     }
 }
